@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 sum = 0
 
 for x in xrange(1, 10) :
