@@ -1,0 +1,126 @@
+i before 0
+length  10
+i after 1
+answer before  3628800
+answer before  0
+i later 1
+[0]
+i before 0
+length  9
+i after 1
+answer before  362880
+i after 2
+answer before  725760
+i after 3
+answer before  1088640
+answer before  725760
+i later 3
+[0, 3]
+i before 0
+length  8
+i after 1
+answer before  766080
+i after 2
+answer before  806400
+i after 3
+answer before  846720
+i after 4
+answer before  887040
+i after 5
+answer before  927360
+i after 6
+answer before  967680
+i after 7
+answer before  1008000
+answer before  967680
+i later 7
+[0, 3, 8]
+i before 0
+length  7
+i after 1
+answer before  972720
+i after 2
+answer before  977760
+i after 3
+answer before  982800
+i after 4
+answer before  987840
+i after 5
+answer before  992880
+i after 6
+answer before  997920
+i after 7
+answer before  1002960
+answer before  997920
+i later 7
+[0, 3, 8, 9]
+i before 0
+length  6
+i after 1
+answer before  998640
+i after 2
+answer before  999360
+i after 3
+answer before  1000080
+answer before  999360
+i later 3
+[0, 3, 8, 9, 4]
+i before 0
+length  5
+i after 1
+answer before  999480
+i after 2
+answer before  999600
+i after 3
+answer before  999720
+i after 4
+answer before  999840
+i after 5
+answer before  999960
+answer before  999840
+i later 5
+[0, 3, 8, 9, 4, 7]
+i before 0
+length  4
+i after 1
+answer before  999864
+i after 2
+answer before  999888
+i after 3
+answer before  999912
+i after 4
+answer before  999936
+answer before  999912
+i later 4
+[0, 3, 8, 9, 4, 7, 6]
+i before 0
+length  3
+i after 1
+answer before  999918
+i after 2
+answer before  999924
+i after 3
+answer before  999930
+answer before  999924
+i later 3
+[0, 3, 8, 9, 4, 7, 6, 5]
+i before 0
+length  2
+i after 1
+answer before  999926
+i after 2
+answer before  999928
+answer before  999926
+i later 2
+[0, 3, 8, 9, 4, 7, 6, 5, 2]
+i before 0
+length  1
+i after 1
+answer before  999927
+answer before  999926
+i later 1
+[0, 3, 8, 9, 4, 7, 6, 5, 2, 1]
+i before 0
+length  0
+answer before  999925
+i later 0
