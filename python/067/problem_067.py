@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
+import time
+"""
+description:
 
-#description
-#By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.That is, 3 + 7 + 4 + 9 = 23.
-#Find the maximum total from top to bottom of the triangle below:
-
+By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.That is, 3 + 7 + 4 + 9 = 23.
+Find the maximum total from top to bottom of the triangle below:
+"""
+startTime = time.clock()
 value_matrix = []
 
 for line in open('tri.txt') :
@@ -46,3 +49,4 @@ for i in xrange(1,length) :
 
 print max(answer_matrix[length-1])
 
+print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))

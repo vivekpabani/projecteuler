@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 import math
-
-# Problem Definition :
-#The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
-#Find the sum of all the primes below two million.
-
+"""
+ Problem Definition :
+ The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+ Find the sum of all the primes below two million.
+"""
 def isPrime(number) :
     if number == 2 or number == 3 :
         return 1
