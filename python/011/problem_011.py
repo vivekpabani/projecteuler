@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 
-import math
 
-# Problem Definition :
+"""
+Problem Definition :
+
 #In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
 #The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 #What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
+
+"""
+
+import math
 
 
 matrix = [[8,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,8],
@@ -53,4 +58,5 @@ for i in xrange (0,20) :
         else :
             cross_dia_mul = 0
         max_num = max(max_num, h_mul, v_mul, dia_mul, cross_dia_mul)
+
 print max_num

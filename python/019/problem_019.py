@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-#Description
+"""
+Problem Definition :
 
-'''You are given the following information, but you may prefer to do some research for yourself.
+You are given the following information, but you may prefer to do some research for yourself.
 
 1 Jan 1900 was a Monday.
 Thirty days has September,
@@ -14,8 +15,10 @@ And on leap years, twenty-nine.
 A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?'''
 
-# This program finds the number of days when given particular day of a week falls on 1st date of month for the range of given years.
-# first argument - start_year, second argument - end_year , third argument - day (Monday - 1, Sunday - 7)
+ This program finds the number of days when given particular day of a week falls on 1st date of month for the range of given years.
+ first argument - start_year, second argument - end_year , third argument - day (Monday - 1, Sunday - 7)
+
+"""
 
 
 import sys
@@ -37,7 +40,9 @@ def find_leap(year_input) :
         return 1
     else :
         return 0
+
 # function to find the days between year 1900 and given year
+
 
 def count_days(year_input) :
     total_days = 0
@@ -47,6 +52,7 @@ def count_days(year_input) :
         else :
             total_days = total_days + 365
     return total_days
+
 
 ystart = int(sys.argv[1])
 yend = int(sys.argv[2])

@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+
+"""
+Problem Definition :
+    
+In the 5 by 5 matrix below, the minimal path sum from the top left to the bottom right, by only moving to the right and down, is indicated in bold red and is equal to 2427.
+    
+Find the minimal path sum, in matrix.txt (right click and "Save Link/Target As..."), a 31K text file containing a 80 by 80 matrix, from the top left to the bottom right by only moving right and down.
+    
+"""
 __author__ = 'vivek'
 
 import time
@@ -23,7 +34,6 @@ answer_matrix = [[0]*length for i in range(length)]
 
 for i in xrange(0,length):
     for j in xrange(0,length):
-        #print(answer_matrix)
         if i==0 and j==0:
             answer_matrix[i][j] = value_matrix[i][j]
         elif i==0 and j>0:

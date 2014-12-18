@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 
-import math
+"""
+Problem Definition :
 
-# Problem Definition :
-# By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
-# What is the 10001st prime number?
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10001st prime number?
+
+"""
+
+import math
 
 def isPrime(number) :
     if number == 2 or number == 3 :

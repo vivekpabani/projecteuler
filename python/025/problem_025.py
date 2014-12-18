@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-__author__ = 'vivek'
 
-import time
+""" 
+Problem Definition :
 
-""" Problem Definition :
 The Fibonacci sequence is defined by the recurrence relation:
 
 Fn = Fn-1 + Fn-2, where F1 = 1 and F2 = 1.
@@ -23,7 +22,14 @@ F11 = 89
 F12 = 144
 The 12th term, F12, is the first term to contain three digits.
 
-What is the first term in the Fibonacci sequence to contain 1000 digits?"""
+What is the first term in the Fibonacci sequence to contain 1000 digits?
+    
+"""
+
+__author__ = 'vivek'
+
+import time
+
 
 startTime = time.clock()
 
@@ -40,4 +46,5 @@ while(len(str(num1))!=1000):
     num1,num2,count = fib(num1,num2,count)
 
 print(count)
+
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
