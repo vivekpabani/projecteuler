@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/032/problem_032.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/035/problem_035.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/036/problem_036.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/037/problem_037.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/038/problem_038.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/038/problem_038a.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/046/problem_046.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/092/problem_092.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/092/problem_092a.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/243/problem_243.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/243/problem_243a.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/038/temp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/243/temp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/038/temp.py" afterPath="$PROJECT_DIR$/038/temp.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,8 +88,8 @@
       <file leaf-file-name="temp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/038/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6451613" vertical-offset="0" max-vertical-offset="744">
-              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.12096774" vertical-offset="0" max-vertical-offset="744">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#22#33#0" expanded="true" />
               </folding>
@@ -877,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/038/temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6451613" vertical-offset="0" max-vertical-offset="744">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.12096774" vertical-offset="0" max-vertical-offset="744">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#22#33#0" expanded="true" />
           </folding>
