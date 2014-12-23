@@ -1,119 +1,40 @@
 __author__ = 'vivek'
 
-####### IN PROGRESS ########
 
 import time
 
 startTime = time.clock()
 
 one_d = [i for i in xrange(1,10)]
-#print(one_d)
 two_d = [i for i in xrange(10,100)]
 three_d = [i for i in xrange(100,1000)]
 four_d = [i for i in xrange(1000,10000)]
 
+all_numbers = {1:one_d, 2:two_d, 3:three_d, 4:four_d}
+ranges = {1:[[0,5],[0,6],[0,7],[0,8],[0,9]], 2:[[0,3],[0,4]], 3:[[0,3]], 4:[[0,2]]}
+
 pandigital = []
+answers = []
 
 
-def checkPandigital(numbers):
+def checkPandigital(number_s):
 
-    constr = ''.join(str(i) for i in numbers)
-    if '0' not in constr and len(constr) == 9 and len(constr)==len(''.join(set(constr))):
-        print(numbers, constr)
+    if '0' not in number_s and len(number_s) == 9 and len(number_s)==len(''.join(set(number_s))):
         return 1
     else:
         return 0
 
 
-for num1 in one_d:
-    for num2 in one_d:
-        if num1 != num2:
-            for number in three_d+four_d:
-                products = []
-                products.append((number*num1))
-                products.append((number*num2))
-                #products.sort(reverse=True)
-                if checkPandigital(products):
-                    pandigital.append(int(''.join(str(i) for i in products)))
+for i in xrange(1,5):
+    for number in all_numbers[i]:
+        for range_value in ranges[i]:
+            answer_l = []
+            for multiplier in xrange(range_value[0], range_value[1]):
+                answer_l.append(str(number*one_d[multiplier]))
+            answer_str = ''.join(j for j in answer_l)
+            if checkPandigital(answer_str):
+                pandigital.append(answer_str)
 
-for num1 in one_d:
-    for num2 in one_d:
-            for num3 in one_d:
-                num = str(num1)+str(num2)+str(num3)
-                if len(num) == len(''.join(set(num))):
-
-                    for number in two_d+three_d:
-                        products = []
-                        products.append((number*num1))
-                        products.append((number*num2))
-                        products.append((number*num3))
-                        #products.sort(reverse=True)
-                        if checkPandigital(products):
-                            pandigital.append(int(''.join(str(i) for i in products)))
-
-for num1 in one_d:
-    for num2 in one_d:
-            for num3 in one_d:
-                for num4 in one_d:
-                    num = str(num1)+str(num2)+str(num3)+str(num4)
-                    if len(num) == len(''.join(set(num))):
-
-                        for number in two_d:
-                            products = []
-                            products.append((number*num1))
-                            products.append((number*num2))
-                            products.append((number*num3))
-                            products.append((number*num4))
-                            #products.sort(reverse=True)
-                            if checkPandigital(products):
-                                pandigital.append(int(''.join(str(i) for i in products)))
-
-for num1 in one_d:
-    for num2 in one_d:
-            for num3 in one_d:
-                for num4 in one_d:
-                    for num5 in one_d:
-                        num = str(num1)+str(num2)+str(num3)+str(num4)+str(num5)
-                        if len(num) == len(''.join(set(num))):
-
-                            for number in one_d:
-                                products = []
-                                products.append((number*num1))
-                                products.append((number*num2))
-                                products.append((number*num3))
-                                products.append((number*num4))
-                                products.append((number*num5))
-                                #products.sort(reverse=True)
-                                if checkPandigital(products):
-                                    pandigital.append(int(''.join(str(i) for i in products)))
-
-"""
-
-for num1 in one_d:
-    for num2 in one_d:
-        for num3 in one_d:
-            for num4 in one_d:
-                for num5 in one_d:
-                    for num6 in one_d:
-                        for num7 in one_d:
-                            num = str(num1)+str(num2)+str(num3)+str(num4)+str(num5)+str(num6)+str(num7)
-                            if len(num) == len(''.join(set(num))):
-                                for number in one_d:
-                                    products = []
-                                    products.append((number*num1))
-                                    products.append((number*num2))
-                                    products.append((number*num3))
-                                    products.append((number*num4))
-                                    products.append((number*num5))
-                                    products.append((number*num6))
-                                    products.append((number*num7))
-                                    products.sort(reverse=True)
-                                    if checkPandigital(products):
-                                        pandigital.append(int(''.join(str(i) for i in products)))
-
-"""
-print(pandigital)
-print(len(pandigital))
 print(max(pandigital))
 
 
