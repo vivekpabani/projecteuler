@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/243/problem_243a.py" line="54" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/038/problem_038b.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/041/problem_041.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/050/problem_050.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/097/problem_097.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/099/problem_099.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/038/temp.py" afterPath="$PROJECT_DIR$/038/temp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="" />
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
