@@ -27,26 +27,26 @@ def pentagonal(n):
     return n*(3*n - 1)/2
 
 
-penta_numbers = [pentagonal(x) for x in xrange(1,10000)]
-print(62710501 in penta_numbers)
+penta_numbers = [pentagonal(x) for x in xrange(1,5000)]
+#print(62710501 in penta_numbers)
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
 answers = []
 print(len(penta_numbers))
-
-for i in xrange(0,9999):
-    for j in xrange(i+1,9999) :
+"""
+for i in xrange(0,4999):
+    for j in xrange(i+1,4999) :
         number1 = penta_numbers[i]
         number2 = penta_numbers[j]
-        if number2-number1 in penta_numbers :#and abs(number2-number1) in penta_numbers:
-            answers.append(abs(number2-number1))
+        if number2+number1 in penta_numbers and number2-number1 in penta_numbers:
+            answers.append(number2-number1)
             #print("Found")
             print(number1, number2)
 if answers:
     print(min(answers))
 else:
     print("Not found")
-
+"""
 print(penta_numbers)
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
