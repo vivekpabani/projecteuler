@@ -15,16 +15,21 @@ import time
 
 startTime = time.clock()
 
-#print(pow(99,99))
 maximum = 0
 
 for a in xrange(95,100):
     for b in xrange(95,100):
+
         answer = pow(a,b)
         total = 0
-        while(answer>0):
+
+        while answer > 0:
+
             answer, digit = divmod(answer,10)
             total += digit
+
         maximum = max(maximum,total)
+
 print(maximum)
+
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))

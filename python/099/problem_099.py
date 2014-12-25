@@ -34,5 +34,7 @@ for number in numbers:
         maximum = value
         answer = count
     count += 1
+
 print answer
+
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
