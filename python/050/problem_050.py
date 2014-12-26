@@ -16,6 +16,7 @@ startTime = time.clock()
 
 prime_numbers = []
 
+
 def isPrime(number) :
     if number < 0:
         return 0
