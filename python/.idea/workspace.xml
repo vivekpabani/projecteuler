@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/134/problem_134.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/054/temp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/050/problem_050.py" afterPath="$PROJECT_DIR$/050/problem_050.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/054/problem_054.py" afterPath="$PROJECT_DIR$/054/problem_054.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/134/problem_134a.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/134/temp2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/134/temp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/134/problem_134.py" afterPath="$PROJECT_DIR$/134/problem_134.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -33,31 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="problem_097.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/097/problem_097.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="problem_050.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/050/problem_050.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="825">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problem_102.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/102/problem_102.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="885">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,24 +93,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_054.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/054/problem_054.py">
+      <file leaf-file-name="problem_134.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/134/problem_134.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1155">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+              <folding>
+                <element signature="e#581#592#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_134a.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/134/problem_134a.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.69220245" vertical-offset="454" max-vertical-offset="1260">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_134.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/134/problem_134.py">
+      <file leaf-file-name="temp2" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/134/temp2">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5129959" vertical-offset="315" max-vertical-offset="1155">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-              <folding>
-                <element signature="e#581#592#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2970">
+              <caret line="191" column="18" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/134/temp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-39181.11" vertical-offset="3915" max-vertical-offset="1062030">
+              <caret line="70787" column="6" selection-start-line="70787" selection-start-column="2" selection-end-line="70787" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,9 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/092/problem_092a.py" />
-        <option value="$PROJECT_DIR$/035/problem_035.py" />
-        <option value="$PROJECT_DIR$/032/problem_032.py" />
         <option value="$PROJECT_DIR$/038/problem_038a.py" />
         <option value="$PROJECT_DIR$/243/problem_243a.py" />
         <option value="$PROJECT_DIR$/243/problem_243.py" />
@@ -194,6 +191,9 @@
         <option value="$PROJECT_DIR$/054/problem_054.py" />
         <option value="$PROJECT_DIR$/050/problem_050.py" />
         <option value="$PROJECT_DIR$/134/problem_134.py" />
+        <option value="$PROJECT_DIR$/134/temp" />
+        <option value="$PROJECT_DIR$/134/temp2" />
+        <option value="$PROJECT_DIR$/134/problem_134a.py" />
       </list>
     </option>
   </component>
@@ -461,32 +461,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/134" />
       <recent name="$PROJECT_DIR$/038" />
       <recent name="$PROJECT_DIR$/092" />
       <recent name="$PROJECT_DIR$/243" />
       <recent name="$PROJECT_DIR$/027" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_134">
-    <configuration default="false" name="problem_102" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/102" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/102/problem_102.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem_134a">
     <configuration default="false" name="problem_099" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -557,6 +539,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/134/problem_134.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_134a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/134" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/134/problem_134a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -686,19 +687,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_102" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_099" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_054" />
-      <item index="3" class="java.lang.String" itemvalue="Python.temp" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_134" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_099" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_054" />
+      <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_134" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem_134a" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_134" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_054" />
-        <item index="2" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_099" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_102" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem_134a" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_134" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_054" />
+        <item index="3" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_099" />
       </list>
     </recent_temporary>
   </component>
@@ -785,27 +786,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/029/problem_029.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/028/problem_028.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/027/problem_027.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="855">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/243/temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="525">
@@ -1165,13 +1145,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/134/temp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-39181.11" vertical-offset="3915" max-vertical-offset="1062030">
+          <caret line="70787" column="6" selection-start-line="70787" selection-start-column="2" selection-end-line="70787" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/134/temp2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2164" max-vertical-offset="2970">
+          <caret line="191" column="18" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/134/problem_134.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5129959" vertical-offset="315" max-vertical-offset="1155">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1155">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
           <folding>
             <element signature="e#581#592#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/134/problem_134a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69220245" vertical-offset="454" max-vertical-offset="1260">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
