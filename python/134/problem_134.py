@@ -56,7 +56,7 @@ for i in xrange(0,limit-1):
     num2 = prime_numbers[i+1]
     #for j in xrange(i+1, limit):
 
-
+    print(num1)
     found = 0
     start = 1
     while not found:
