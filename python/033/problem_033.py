@@ -23,6 +23,7 @@ startTime = time.clock()
 
 getcontext().prec = 5
 
+
 def check_numbers(num1, num2) :
     cancelled = -1
     remaining_d = -1
