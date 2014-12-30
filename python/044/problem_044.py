@@ -32,21 +32,25 @@ penta_numbers = [pentagonal(x) for x in xrange(1,5000)]
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
 answers = []
-print(len(penta_numbers))
-"""
-for i in xrange(0,4999):
-    for j in xrange(i+1,4999) :
+
+print(penta_numbers[1998])
+print(penta_numbers[4998])
+#print(len(penta_numbers))
+
+for i in xrange(0,1999):
+    for j in xrange(i+1,1999):
         number1 = penta_numbers[i]
         number2 = penta_numbers[j]
-        if number2+number1 in penta_numbers and number2-number1 in penta_numbers:
-            answers.append(number2-number1)
+        if number2+number1 in penta_numbers:# and number2-number1 in penta_numbers:
+            answers.append(number1+ number2)
             #print("Found")
             print(number1, number2)
 if answers:
     print(min(answers))
+    print(len(answers))
 else:
     print("Not found")
-"""
-print(penta_numbers)
+
+#print(penta_numbers)
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
