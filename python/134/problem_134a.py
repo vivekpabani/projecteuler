@@ -67,7 +67,6 @@ for i in xrange(0,limit-1):
             number = str(num2*num)
             if number.endswith(str(num1)):
                 answers.append(int(number))
-            #print number
                 found = 1
                 break
         print("start",start)
