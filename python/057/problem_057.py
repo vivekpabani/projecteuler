@@ -27,6 +27,6 @@ import time
 
 startTime = time.clock()
 
-
+number = 1/2
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
