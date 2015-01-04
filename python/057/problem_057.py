@@ -30,7 +30,15 @@ startTime = time.clock()
 number = 1/2
 
 
-def term_calc():
-    pass
+def term_calc(numerator, denominator):
+    if numerator > 0:
+        term_num = (2*denominator)+numerator
+        term_denom = denominator
+    else:
+        term_num = 2
+        term_denom = 1
+    return term_num, term_denom
+
+
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
