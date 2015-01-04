@@ -40,5 +40,21 @@ def term_calc(numerator, denominator):
     return term_num, term_denom
 
 
+def ans_calc(numerator, denominator):
+    ans_num = numerator + denominator
+    ans_denom = denominator
+    return ans_num, ans_denom
 
+
+start_num = 0
+start_denom = 1
+count = 0
+for i in xrange(1000):
+    start_denom, start_num = term_calc(start_num,start_denom)
+    answer_num, answer_denom = ans_calc(start_num,start_denom)
+
+    if len(str(answer_num)) > len(str(answer_denom)):
+        count += 1
+
+print(count)
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
