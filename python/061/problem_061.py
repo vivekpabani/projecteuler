@@ -58,11 +58,8 @@ hexa = []
 hepta = []
 octa = []
 
-hepta_octa = []
-hexa_rest = []
-penta_rest = []
-squa_rest =[]
-tri_rest =[]
+
+all_numbers = []
 
 
 answer = 0
@@ -116,53 +113,72 @@ while answer < 10000:
         octa.append(answer)
     number += 1
 
-print(hexa)
-print(len(hexa))
 
-print(hepta)
-print(len(hepta))
+all_numbers.append(tri)
+all_numbers.append(squa)
+all_numbers.append(penta)
+all_numbers.append(hexa)
+all_numbers.append(hepta)
+all_numbers.append(octa)
 
-print(octa)
-print(len(octa))
+sets1 = []
+sets2 = []
 
-for num1 in hepta:
-    for num2 in octa:
-        if str(num1)[-2:] == str(num2)[:2]:
-            hepta_octa.append((num1,num2))
 
-for num1 in hexa:
-    for num2 in hepta_octa:
-        if str(num1)[-2:] == str(num2[0])[:2]:
-            hexa_rest.append((num1,num2[0],num2[1]))
+for i in xrange(6):
+    for j in xrange(6):
+        sets1 = []
+        if i != j:
+            for num1 in all_numbers[i]:
+                for num2 in all_numbers[j]:
+                    if str(num1)[-2:] == str(num2)[:2]:
+                        sets1.append((num1,num2))
 
-for num1 in penta:
-    for num2 in hexa_rest:
-        if str(num1)[-2:] == str(num2[0])[:2]:
-            penta_rest.append((num1,num2[0],num2[1],num2[2]))
+        for k in xrange(6):
+            sets2 = []
+            if i!=k and j!=k:
+                for num1 in all_numbers[k]:
+                    for num2 in sets1:
+                        if str(num1)[-2:] == str(num2[0])[:2]:
+                            sets2.append((num1,num2[0],num2[1]))
+            for l in xrange(6):
+                sets3 = []
+                if i!=l and j!=l and k!=l:
+                    for num1 in all_numbers[l]:
+                        for num2 in sets2:
+                            if str(num1)[-2:] == str(num2[0])[:2]:
+                                sets3.append((num1,num2[0],num2[1],num2[2]))
+                for m in xrange(6):
+                    sets4 = []
+                    if i!=m and j!=m and k!=m and l!=m:
+                        for num1 in all_numbers[m]:
+                            for num2 in sets3:
+                                if str(num1)[-2:] == str(num2[0])[:2]:
+                                    sets4.append((num1,num2[0],num2[1],num2[2], num2[3]))
+                    #if sets4:
+                     #   print(sets4)
+                    for n in xrange(6):
+                        sets5 = []
+                        if i!=n and j!=n and k!=n and l!=n and m!=n:
+                            for num1 in all_numbers[n]:
+                                for num2 in sets4:
+                                    if str(num1)[-2:] == str(num2[0])[:2] and str(num1)[:2] == str(num2[4])[-2:]:
+                                        sets5.append((num1,num2[0],num2[1],num2[2], num2[3], num2[4]))
+                        if sets5:
+                            print(sets5)
+                            break
+                    if sets5:
+                        break
+                if sets5:
+                    break
+            if sets5:
+                break
+        if sets5:
+            break
+    if sets5:
+        break
 
-for num1 in squa:
-    for num2 in penta_rest:
-        if str(num1)[-2:] == str(num2[0])[:2]:
-            squa_rest.append((num1,num2[0],num2[1],num2[2],num2[3]))
+print(sum(sets5[0]))
 
-for num1 in tri:
-    for num2 in squa_rest:
-        if str(num1)[-2:] == str(num2[0])[:2]:
-            tri_rest.append((num1,num2[0],num2[1],num2[2],num2[3],num2[4]))
-
-print(hepta_octa)
-print(len(hepta_octa))
-
-print(hexa_rest)
-print(len(hexa_rest))
-
-print(penta_rest)
-print(len(penta_rest))
-
-print(squa_rest)
-print(len(squa_rest))
-
-print(tri_rest)
-print(len(tri_rest))
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
