@@ -12,7 +12,7 @@ Find the maximum total from top to bottom of the triangle below:
 import time
 
 
-startTime = time.clock()
+
 value_matrix = []
 
 for line in open('tri.txt') :
@@ -41,6 +41,8 @@ for i in xrange(0,length) :
 
 
 answer_matrix[0][0] = 59
+
+startTime = time.clock()
 
 for i in xrange(1,length) :
     for j in xrange(0,i+1) :
