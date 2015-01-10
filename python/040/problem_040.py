@@ -1,9 +1,18 @@
 #!/usr/bin/env python
+# coding=utf-8
 
 
 """
 Problem Definition :
+An irrational decimal fraction is created by concatenating the positive integers:
 
+0.123456789101112131415161718192021...
+
+It can be seen that the 12th digit of the fractional part is 1.
+
+If dn represents the nth digit of the fractional part, find the value of the following expression.
+
+d1 × d10 × d100 × d1000 × d10000 × d100000 × d1000000
 
 """
 
@@ -14,25 +23,20 @@ import time
 startTime = time.clock()
 
 
-#number_str = ''.join(str(x) for x in xrange(0,20))
-#print(number_str)
 limit = 1000000
 length = 1
 power = 0
+
 while length < limit :
     power += 1
-    length = length + pow(10,power)*power - pow(10,power-1)*(power)
-
-print(length)
-print(power)
+    length = length + pow(10,power)*power - pow(10,power-1)*power
 
 number_str = ''.join(str(x) for x in xrange(0,pow(10,power)))
-print len(number_str)
 
 answer = 1
 
 for i in xrange(0,7) :
-    answer = answer * int(number_str[pow(10,i)])
+    answer *= int(number_str[pow(10,i)])
 
 print(answer)
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
