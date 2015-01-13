@@ -31,9 +31,9 @@ def isPrime(number) :
 
 answer, num = 2,3
 
-while num < 2000001 :
-    if isPrime(num) :
-        answer = answer + num
-    num = num + 2
+while num < 2000001:
+    if isPrime(num):
+        answer += num
+    num += 2
 
 print answer
