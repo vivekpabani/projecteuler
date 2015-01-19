@@ -34,8 +34,9 @@ getcontext().prec = 102
 
 answer = 0
 
-for number in xrange(1,100):
+for number in xrange(1, 100):
     square_root = str(Decimal(number).sqrt())
+
     if len(square_root) > 1:
         decimal = int(square_root[:1] + square_root[-101:-2])
         answer += find_sum(decimal)

@@ -17,14 +17,14 @@ from collections import Counter
 
 startTime = time.clock()
 
-cubes = [''.join(sorted(str(i**3))) for i in xrange(0,10000)]
+cubes = [''.join(sorted(str(i**3))) for i in xrange(0, 10000)]
 
 perm_count = Counter(cubes)
 answer = 10000
 
 for key in perm_count:
     if perm_count[key] == 5:
-        answer = min(answer,cubes.index(key))
+        answer = min(answer, cubes.index(key))
 
 print(answer**3)
 

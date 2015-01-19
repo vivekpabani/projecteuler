@@ -64,7 +64,7 @@ all_numbers = []
 
 answer = 0
 number = 1
-while answer < 10000 :
+while answer < 10000:
     answer = triangle(number)
     if answer > 999:
         tri.append(answer)
@@ -73,7 +73,7 @@ while answer < 10000 :
 
 answer = 0
 number = 1
-while answer < 10000 :
+while answer < 10000:
     answer = square(number)
     if answer > 999:
         squa.append(answer)
@@ -81,7 +81,7 @@ while answer < 10000 :
 
 answer = 0
 number = 1
-while answer < 10000 :
+while answer < 10000:
     answer = pentagonal(number)
     if answer > 999 and answer < 10000:
         penta.append(answer)
@@ -89,7 +89,7 @@ while answer < 10000 :
 
 answer = 0
 number = 1
-while answer < 10000 :
+while answer < 10000:
     answer = hexagonal(number)
     if answer > 999 and answer < 10000:
         hexa.append(answer)
@@ -98,7 +98,7 @@ while answer < 10000 :
 
 answer = 0
 number = 1
-while answer < 10000 :
+while answer < 10000:
     answer = heptagonal(number)
     if answer > 999 and answer < 10000:
         hepta.append(answer)
@@ -124,7 +124,6 @@ all_numbers.append(octa)
 sets1 = []
 sets2 = []
 
-
 for i in xrange(6):
     for j in xrange(6):
         sets1 = []
@@ -141,6 +140,7 @@ for i in xrange(6):
                     for num2 in sets1:
                         if str(num1)[-2:] == str(num2[0])[:2]:
                             sets2.append((num1,num2[0],num2[1]))
+
             for l in xrange(6):
                 sets3 = []
                 if i!=l and j!=l and k!=l:
@@ -148,6 +148,7 @@ for i in xrange(6):
                         for num2 in sets2:
                             if str(num1)[-2:] == str(num2[0])[:2]:
                                 sets3.append((num1,num2[0],num2[1],num2[2]))
+
                 for m in xrange(6):
                     sets4 = []
                     if i!=m and j!=m and k!=m and l!=m:
@@ -155,8 +156,7 @@ for i in xrange(6):
                             for num2 in sets3:
                                 if str(num1)[-2:] == str(num2[0])[:2]:
                                     sets4.append((num1,num2[0],num2[1],num2[2], num2[3]))
-                    #if sets4:
-                     #   print(sets4)
+
                     for n in xrange(6):
                         sets5 = []
                         if i!=n and j!=n and k!=n and l!=n and m!=n:

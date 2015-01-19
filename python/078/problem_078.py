@@ -17,8 +17,9 @@ startTime = time.clock()
 
 
 penta = []
-partition_numbers = []
+partition_numbers = list()
 partition_numbers.append(1)
+
 
 def pentagonal(num):
     return num*(3*num - 1)/2
@@ -40,15 +41,15 @@ def partition(num):
 
     while penta[i] <= num:
 
-        add = add + symbol*partition_numbers[num - penta[i]]
+        add += symbol*partition_numbers[num - penta[i]]
 
-        start +=1
+        start += 1
 
-        if start%2 == 0:
-            symbol = symbol*(-1)
+        if start % 2 == 0:
+            symbol *= (-1)
             start = 0
 
-        i +=1
+        i += 1
 
     return add
 
@@ -65,11 +66,12 @@ for i in xrange(60000):
 while not found:
     partition_number = partition(number)
     partition_numbers.append(partition_number)
-    if partition_number%1000000 == 0:
+
+    if partition_number % 1000000 == 0:
         found = 1
         print(number)
         print(partition_number)
-    number +=1
 
+    number +=1
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))

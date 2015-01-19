@@ -3,7 +3,16 @@
 
 """
 Problem Definition :
+It is possible to write five as a sum in exactly six different ways:
 
+4 + 1
+3 + 2
+3 + 1 + 1
+2 + 2 + 1
+2 + 1 + 1 + 1
+1 + 1 + 1 + 1 + 1
+
+How many different ways can one hundred be written as a sum of at least two positive integers?
 
 """
 
@@ -14,7 +23,7 @@ import time
 startTime = time.clock()
 
 penta = []
-partition_numbers = []
+partition_numbers = list()
 partition_numbers.append(1)
 
 
@@ -38,12 +47,12 @@ def partition(num):
 
     while penta[i] <= num:
 
-        add = add + symbol*partition_numbers[num - penta[i]]
+        add += symbol*partition_numbers[num - penta[i]]
 
         start +=1
 
-        if start%2 == 0:
-            symbol = symbol*(-1)
+        if start % 2 == 0:
+            symbol *= (-1)
             start = 0
 
         i +=1
@@ -59,7 +68,7 @@ for i in xrange(1000):
     alt_num = alternate(alt_num)
 
 
-for i in xrange(1,101):
+for i in xrange(1, 101):
     partition_number = partition(number)
     partition_numbers.append(partition_number)
 

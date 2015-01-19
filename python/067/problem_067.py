@@ -30,11 +30,11 @@ for line in open('tri.txt') :
 length = len(value_matrix)
 answer_matrix = []
 
-for i in xrange(0,length) :
+for i in xrange(0, length) :
 
     temp_list = []
 
-    for j in xrange(0,i+1) :
+    for j in xrange(0, i+1) :
         temp_list.append(0)
 
     answer_matrix.append(temp_list)        
@@ -44,15 +44,15 @@ answer_matrix[0][0] = 59
 
 startTime = time.clock()
 
-for i in xrange(1,length) :
-    for j in xrange(0,i+1) :
+for i in xrange(1, length):
+    for j in xrange(0, i+1) :
 
-        if j == 0 :
+        if j == 0:
             answer_matrix[i][j] = int(value_matrix[i][j]) + int(answer_matrix[i-1][j])
-        elif i == j :
+        elif i == j:
             answer_matrix[i][j] = int(value_matrix[i][j]) + int(answer_matrix[i-1][j-1])
-        else :
-            answer_matrix[i][j] = int(value_matrix[i][j]) + max(int(answer_matrix[i-1][j]),int(answer_matrix[i-1][j-1]))
+        else:
+            answer_matrix[i][j] = int(value_matrix[i][j]) + max(int(answer_matrix[i-1][j]), int(answer_matrix[i-1][j-1]))
 
 print max(answer_matrix[length-1])
 
