@@ -4,22 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/243/problem_243a.py" line="54" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/096/problem_096.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/061/problem_061.py" afterPath="$PROJECT_DIR$/061/problem_061.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/062/problem_062.py" afterPath="$PROJECT_DIR$/062/problem_062.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/067/problem_067.py" afterPath="$PROJECT_DIR$/067/problem_067.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/076/problem_076.py" afterPath="$PROJECT_DIR$/076/problem_076.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/078/problem_078.py" afterPath="$PROJECT_DIR$/078/problem_078.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/080/problem_080.py" afterPath="$PROJECT_DIR$/080/problem_080.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/081/problem_081.py" afterPath="$PROJECT_DIR$/081/problem_081.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/092/problem_092.py" afterPath="$PROJECT_DIR$/092/problem_092.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/134/problem_134.py" afterPath="$PROJECT_DIR$/134/problem_134.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/142/problem_142.py" afterPath="$PROJECT_DIR$/142/problem_142.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/145/problem_145.py" afterPath="$PROJECT_DIR$/145/problem_145.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/243/problem_243.py" afterPath="$PROJECT_DIR$/243/problem_243.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="" />
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,18 +70,8 @@
       <file leaf-file-name="problem_60.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/060/problem_60.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.005472" vertical-offset="0" max-vertical-offset="1380">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problem_087.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/087/problem_087.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-              <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.08207934" vertical-offset="300" max-vertical-offset="1380">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -150,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/063/temp" />
         <option value="$PROJECT_DIR$/063/temp2" />
         <option value="$PROJECT_DIR$/063/problem_063.py" />
         <option value="$PROJECT_DIR$/056/problem_056.py" />
@@ -201,6 +175,7 @@
         <option value="$PROJECT_DIR$/067/problem_067.py" />
         <option value="$PROJECT_DIR$/062/problem_062.py" />
         <option value="$PROJECT_DIR$/061/problem_061.py" />
+        <option value="$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py" />
       </list>
     </option>
   </component>
@@ -550,7 +525,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="269" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -587,26 +562,7 @@
       <recent name="$PROJECT_DIR$/134" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_078">
-    <configuration default="false" name="problem_010" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/010" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/010/problem_010.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.boolean_search">
     <configuration default="false" name="problem_096" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -677,6 +633,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/078/problem_078.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="boolean_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/cs429/college/assignment0" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -806,19 +781,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_010" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_096" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_092" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_081" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_078" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_096" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_092" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_081" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_078" />
+      <item index="4" class="java.lang.String" itemvalue="Python.boolean_search" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_078" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_081" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_092" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_096" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_010" />
+        <item index="0" class="java.lang.String" itemvalue="Python.boolean_search" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_078" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_081" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_092" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_096" />
       </list>
     </recent_temporary>
   </component>
@@ -856,7 +831,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -905,13 +880,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/023/problem_023.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/024/problem_024.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
@@ -1276,10 +1244,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70564514" vertical-offset="45" max-vertical-offset="2130">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/060/problem_60.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.005472" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.08207934" vertical-offset="300" max-vertical-offset="1380">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
       </provider>
