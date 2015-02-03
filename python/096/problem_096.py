@@ -29,9 +29,9 @@ import time
 startTime = time.clock()
 
 value_matrix = []
-
+filename = 'sudoku.txt'
 i = 1
-for line in open('sudoku.txt'):
+for line in open(filename):
     if i > 2:
         #separator = ''
         temp_list = []
