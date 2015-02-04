@@ -38,11 +38,12 @@ for line in open(filename):
 
         #line = line.split(separator)
         for value in line :
-            temp_list.append(int(value))
+            temp_list.append((value))
         value_matrix.append(temp_list)
 
     i += 1
-    if i > 8:
+    if i > 10:
         break
-print(value_matrix)
+for item in value_matrix:
+    print item
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
