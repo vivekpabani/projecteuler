@@ -48,26 +48,26 @@ def is_prime(number):
         return 1
 
 
-num = 1
-step = 2
-dia = 1
-found = 0
-prime_count = 0
+def main():
+    num = 1
+    step = 2
+    dia = 1
+    prime_count = 0
 
+    while True:
+        for i in xrange(4):
+            num += step
+            if is_prime(num):
+                prime_count += 1
+        dia += 4
+        if prime_count*1.0/dia < 0.1:
+            break
+        step += 2
 
-while not found:
-    for i in xrange(4):
-        num = num + step
-        if is_prime(num):
-            prime_count += 1
-    dia += 4
-    if prime_count*1.0/dia < 0.1:
-        found = 1
-        break
-    step += 2
+    print(num,dia,prime_count)
 
-print(num,dia,prime_count)
-
+if __name__ == "__main__":
+    main()
 
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
