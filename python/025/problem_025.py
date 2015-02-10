@@ -31,20 +31,26 @@ __author__ = 'vivek'
 import time
 
 
-startTime = time.clock()
-
 def fib(a,b,n):
-    a,b = b, a+b;
-    n = n+1
-    return a,b,n
+    a, b = b, a+b
+    n += 1
+    return a, b, n
 
-num1 = 1
-num2 = 1
-count = 1
 
-while(len(str(num1))!=1000):
-    num1,num2,count = fib(num1,num2,count)
+def main():
+    start_time = time.clock()
+    
+    num1 = 1
+    num2 = 1
+    count = 1
 
-print(count)
+    while len(str(num1)) != 1000:
+        num1, num2, count = fib(num1,num2,count)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(count)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
