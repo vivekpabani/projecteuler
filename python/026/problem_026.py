@@ -27,31 +27,36 @@ import time
 from decimal import *
 import operator
 
-startTime = time.clock()
 
-getcontext().prec = 2000
-length = 0
-answers = {}
+def main():
+    start_time = time.clock()
 
-for number in xrange(1,1001):
-    answer = str(Decimal(1)/Decimal(number))[2:]
-    str_length = len(answer)
+    getcontext().prec = 2000
+    length = 0
+    answers = {}
 
-    if str_length > 10:
-        found = 0
+    for number in xrange(1, 1001):
+        answer = str(Decimal(1)/Decimal(number))[2:]
+        str_length = len(answer)
 
-        for i in xrange(0,10):
-            dist = 1
-            while i+ 2*dist <= str_length:
-                if answer[i:i+dist] == answer[i+dist:i+2*dist] and int(answer[i:i+dist]) > 0:
-                    answers[number] = dist
-                    found = 1
+        if str_length > 10:
+            found = 0
+
+            for i in xrange(0, 10):
+                dist = 1
+                while i+ 2*dist <= str_length:
+                    if answer[i:i+dist] == answer[i+dist:i+2*dist] and int(answer[i:i+dist]) > 0:
+                        answers[number] = dist
+                        found = 1
+                        break
+                    dist += 1
+
+                if found:
                     break
-                dist += 1
 
-            if found:
-                break
+    print max(answers.iteritems(), key=operator.itemgetter(1))[0]
 
-print max(answers.iteritems(), key=operator.itemgetter(1))[0]
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == '__main__':
+    main()
