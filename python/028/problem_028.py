@@ -22,20 +22,25 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-answer = 1
-number = 1
-difference = 2
-spiral_size = 1001
-loop_size = (spiral_size+1)/2
+def main():
+    start_time = time.clock()
 
-for loop in xrange(loop_size-1):
-    for count in xrange(4):
-        number = number + difference
-        answer = answer + number
-    difference = difference + 2
+    answer = 1
+    number = 1
+    difference = 2
+    spiral_size = 1001
+    loop_size = (spiral_size+1)/2
 
-print(answer)
+    for loop in xrange(loop_size-1):
+        for count in xrange(4):
+            number += difference
+            answer += number
+        difference += 2
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(answer)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
