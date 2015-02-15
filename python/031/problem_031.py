@@ -19,21 +19,28 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
-
 denominations = [1, 2, 5, 10, 20, 50, 100, 200]
 
 
 def combination(amount, denom):
-
+    
     if amount < 0:
         return 0
 
     if denom == 0:
         return 1
 
-    return combination(amount,denom-1) + combination(amount-denominations[denom],denom)
+    return combination(amount, denom-1) + combination(amount-denominations[denom], denom)
 
-print combination(200,7)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+def main():
+    start_time = time.clock()
+    
+    print combination(200,7)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
+
