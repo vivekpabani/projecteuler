@@ -20,48 +20,50 @@ __author__ = 'vivek'
 import time
 
 
-startTime = time.clock()
-
-one_d = [str(i) for i in xrange(1,10)]
-two_d = [str(i) for i in xrange(10,100)]
-three_d = [str(i)  for i in xrange(100,1000)]
-four_d = [str(i)  for i in xrange(1000,10000)]
-
-pandigital = []
-
-
-def checkPandigital(num1,num2,num3):
+def check_pandigital(num1, num2, num3):
 
     constr = str(num1)+str(num2)+str(num3)
-    if '0' not in constr and len(constr) == 9 and len(constr)==len(''.join(set(constr))):
+    if '0' not in constr and len(constr) == 9 and len(constr) == len(''.join(set(constr))):
         return 1
     else:
         return 0
 
 
-for num1 in two_d:
-    for num2 in three_d:
-        if '0' not in num1 and '0' not in num2 and len(num2)==len(''.join(set(num2))) and len(num1)==len(''.join(set(num1))) and len(num1+num2)==len(''.join(set(num1+num2))):
-            product = int(num1)*int(num2)
-            if checkPandigital(num1,num2,product):
-                pandigital.append(product)
+def main():
+    
+    start_time = time.clock()
 
-for num1 in one_d:
-    for num2 in four_d:
-        if '0' not in num2 and len(num2)==len(''.join(set(num2))) and len(num1+num2)==len(''.join(set(num1+num2))):
-            product = int(num1)*int(num2)
-            if checkPandigital(num1,num2,product):
-                pandigital.append(product)
+    one_d = [str(i) for i in xrange(1, 10)]
+    two_d = [str(i) for i in xrange(10, 100)]
+    three_d = [str(i) for i in xrange(100, 1000)]
+    four_d = [str(i) for i in xrange(1000, 10000)]
 
+    pandigital = []
 
-pandigital = list(set(pandigital))
+    for num1 in two_d:
+        for num2 in three_d:
+            if '0' not in num1 and '0' not in num2 and len(num2) == len(''.join(set(num2))) and len(num1) == len(''.join(set(num1))) and len(num1+num2) == len(''.join(set(num1+num2))):
+                product = int(num1)*int(num2)
+                if check_pandigital(num1, num2, product):
+                    pandigital.append(product)
 
-addition = 0
+    for num1 in one_d:
+        for num2 in four_d:
+            if '0' not in num2 and len(num2) == len(''.join(set(num2))) and len(num1+num2) == len(''.join(set(num1+num2))):
+                product = int(num1)*int(num2)
+                if check_pandigital(num1, num2, product):
+                    pandigital.append(product)
 
-for number in pandigital:
-    addition = addition + number
+    pandigital = list(set(pandigital))
 
+    addition = 0
 
-print(addition)
+    for number in pandigital:
+        addition = addition + number
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(addition)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
