@@ -22,7 +22,7 @@ import time
 
 def check_pandigital(num1, num2, num3):
 
-    constr = str(num1)+str(num2)+str(num3)
+    constr = str(num1) + str(num2) + str(num3)
     if '0' not in constr and len(constr) == 9 and len(constr) == len(''.join(set(constr))):
         return 1
     else:
