@@ -17,22 +17,28 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
 
-curious_numbers = []
+def main():
+    start_time = time.clock()
 
-for number in xrange(3,2500000) : #2540161
-    temp = number
-    add = 0
-    while temp>0 :
-        digit = temp%10
-        temp = temp/10
-        add = add + math.factorial(digit)
-    if number == add :
-        curious_numbers.append(number)
+    curious_numbers = []
 
-print(curious_numbers)
-print(sum(curious_numbers))
+    for number in xrange(3, 2500000):
+        temp = number
+        add = 0
+        while temp > 0:
+            digit = temp % 10
+            temp /= 10
+            add += math.factorial(digit)
+        if number == add:
+            curious_numbers.append(number)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(curious_numbers)
+    print(sum(curious_numbers))
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
+
 
