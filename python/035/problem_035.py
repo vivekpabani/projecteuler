@@ -17,34 +17,29 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
 
-prime_numbers = []
-prime_rotations = []
-
-
-def isPrime(number) :
+def is_prime(number):
     if number < 0:
         return 0
-    elif number == 2 or number == 3 :
+    elif number == 2 or number == 3:
         return 1
-    elif number % 2 == 0 or number % 3 ==0 or number == 1 :
+    elif number % 2 == 0 or number % 3 == 0 or number == 1:
         return 0
-    else :
+    else:
         start = 5
-        while (start <= int(math.sqrt(number))) :
-            if(number % start == 0) :
+        while start <= int(math.sqrt(number)):
+            if number % start == 0:
                 return 0
                 break
-            if(number % (start+2) == 0) :
+            if number % (start+2) == 0:
                 return 0
                 break
-            start = start + 6
+            start += 6
         return 1
 
 
 def rotation(number):
-    rotations = []
+    rotations = list()
     rotations.append(number)
     length = len(str(number)) - 1
 
@@ -52,29 +47,40 @@ def rotation(number):
         return rotations
     else:
         for count in range(length):
-            digit = number%10
-            number = number/10
-            number = digit*pow(10,length) + number
+            digit = number % 10
+            number /= 10
+            number += digit*pow(10, length)
             rotations.append(number)
         return rotations
 
 
-def isPrimeRot(numbers):
-    allPrime = 1
+def is_prime_rot(numbers):
+    all_prime = 1
     for number in numbers:
-        if not isPrime(int(number)):
-            allPrime = 0
+        if not is_prime(int(number)):
+            all_prime = 0
             break
-    return allPrime
+    return all_prime
 
-for x in xrange(1,1000000):
-    if isPrime(x):
-        prime_numbers.append(x)
 
-for number in prime_numbers:
-    if isPrimeRot(rotation(number)):
-        prime_rotations.append(number)
+def main():
+    start_time = time.clock()
 
-print(len(prime_rotations))
+    prime_numbers = []
+    prime_rotations = []
+    
+    for x in xrange(1, 1000000):
+        if is_prime(x):
+            prime_numbers.append(x)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for num in prime_numbers:
+        if is_prime_rot(rotation(num)):
+            prime_rotations.append(num)
+
+    print(len(prime_rotations))
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
