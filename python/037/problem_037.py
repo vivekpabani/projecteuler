@@ -18,102 +18,103 @@ import time
 import math
 
 
-startTime = time.clock()
-
-
-prime_numbers = []
-trunckable_primes = []
-
-special_char = ['2','3','5','7']
-
-
-def isPrime(number) :
+def is_prime(number):
 
     if number < 0:
         return 0
-    elif number == 2 or number == 3 :
+    elif number == 2 or number == 3:
         return 1
-    elif number % 2 == 0 or number % 3 ==0 or number == 1 :
+    elif number % 2 == 0 or number % 3 == 0 or number == 1:
         return 0
-    else :
+    else:
         start = 5
-        while (start <= int(math.sqrt(number))) :
-            if(number % start == 0) :
+        while start <= int(math.sqrt(number)):
+            if number % start == 0:
                 return 0
                 break
-            if(number % (start+2) == 0) :
+            if number % (start+2) == 0:
                 return 0
                 break
-            start = start + 6
+            start += 6
         return 1
 
 
-def isPrimeTrunck(number) :
-
+def is_prime_trunck(number):
+    
+    special_char = ['2','3','5','7']
+    
     if number < 0:
         return 0
-    elif number == 2 or number == 3 :
+    elif number == 2 or number == 3:
         return 1
-    elif number % 2 == 0 or number % 3 ==0 or number == 1 :
+    elif number % 2 == 0 or number % 3 == 0 or number == 1:
         return 0
     elif str(number)[-1:] not in special_char or str(number)[:1] not in special_char:
         return 0
-    else :
+    else:
         start = 5
-        while (start <= int(math.sqrt(number))) :
-            if(number % start == 0) :
+        while start <= int(math.sqrt(number)):
+            if number % start == 0:
                 return 0
                 break
-            if(number % (start+2) == 0) :
+            if number % (start+2) == 0:
                 return 0
                 break
-            start = start + 6
+            start += 6
         return 1
 
 
-def isRightTrunckable(number):
+def is_right_trunckable(number):
     trunckable = 1
     number = str(number)[:-1]
     while number:
-
-        if not isPrime(int(number)):
+        if not is_prime(int(number)):
             trunckable = 0
             break
         number = str(number)[:-1]
     return trunckable
 
 
-def isLeftTrunckable(number):
+def is_left_trunckable(number):
     trunckable = 1
     number = str(number)[1:]
     while number:
 
-        if not isPrime(int(number)):
+        if not is_prime(int(number)):
             trunckable = 0
             break
         number = str(number)[1:]
     return trunckable
 
 
-for x in xrange(1,1000000):
-    if isPrimeTrunck(x):
-        prime_numbers.append(x)
+def main():
 
+    start_time = time.clock()
 
-prime_numbers.remove(2)
-prime_numbers.remove(3)
-prime_numbers.remove(5)
-prime_numbers.remove(7)
+    prime_numbers = []
+    trunckable_primes = []
 
-for number in prime_numbers:
-    if isRightTrunckable(number) and isLeftTrunckable(number):
-        trunckable_primes.append(number)
+    for x in xrange(1, 1000000):
+        if is_prime_trunck(x):
+            prime_numbers.append(x)
 
-add = 0
+    prime_numbers.remove(2)
+    prime_numbers.remove(3)
+    prime_numbers.remove(5)
+    prime_numbers.remove(7)
 
-for item in trunckable_primes:
-    add = add+item
+    for num in prime_numbers:
+        if is_right_trunckable(num) and is_left_trunckable(num):
+            trunckable_primes.append(num)
 
-print(add)
+    add = 0
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for item in trunckable_primes:
+        add += item
+
+    print(add)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
