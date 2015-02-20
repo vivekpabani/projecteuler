@@ -17,19 +17,23 @@ __author__ = 'vivek'
 import time
 
 
-startTime = time.clock()
+def main():
+    start_time = time.clock()
 
-palindromes = []
+    palindromes = []
 
-for number in xrange(1,1000000):
-    if str(number)==str(number)[::-1] and str(bin(number))[2:]== str(bin(number))[:1:-1]:
-        palindromes.append(number)
+    for number in xrange(1, 1000000):
+        if str(number) == str(number)[::-1] and str(bin(number))[2:] == str(bin(number))[:1:-1]:
+            palindromes.append(number)
 
-add = 0
+    add = 0
 
-for number in palindromes:
-    add = add + number
+    for number in palindromes:
+        add += number
 
-print(add)
+    print(add)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
