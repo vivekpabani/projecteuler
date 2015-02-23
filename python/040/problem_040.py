@@ -20,23 +20,29 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
+
+def main():
+    start_time = time.clock()
+
+    limit = 1000000
+    length = 1
+    power = 0
+
+    while length < limit :
+        power += 1
+        length = length + pow(10, power)*power - pow(10, power-1)*power
+
+    number_str = ''.join(str(x) for x in xrange(0, pow(10, power)))
+
+    answer = 1
+
+    for i in xrange(0, 7):
+        answer *= int(number_str[pow(10, i)])
+
+    print(answer)
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
 
-limit = 1000000
-length = 1
-power = 0
+if __name__ == '__main__':
+    main()
 
-while length < limit :
-    power += 1
-    length = length + pow(10,power)*power - pow(10,power-1)*power
-
-number_str = ''.join(str(x) for x in xrange(0,pow(10,power)))
-
-answer = 1
-
-for i in xrange(0,7) :
-    answer *= int(number_str[pow(10,i)])
-
-print(answer)
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
