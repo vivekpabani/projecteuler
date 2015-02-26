@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/042/problem_042.py" afterPath="$PROJECT_DIR$/042/problem_042.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/043/problem_043.py" afterPath="$PROJECT_DIR$/043/problem_043.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,16 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="problem_033.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/033/problem_033.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="1245">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="problem_034.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/034/problem_034.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,11 +111,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_042.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="problem_042.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/042/problem_042.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9564586" vertical-offset="1" max-vertical-offset="765">
+            <state vertical-scroll-proportion="-11.981818" vertical-offset="1" max-vertical-offset="765">
               <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_043.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/043/problem_043.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.556213" vertical-offset="119" max-vertical-offset="825">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -139,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/058/temp.py" />
         <option value="$PROJECT_DIR$/061/temp.py" />
         <option value="$PROJECT_DIR$/061/problem_061a.py" />
         <option value="$PROJECT_DIR$/078/problem_078a.py" />
@@ -190,6 +189,7 @@
         <option value="$PROJECT_DIR$/040/problem_040.py" />
         <option value="$PROJECT_DIR$/041/problem_041.py" />
         <option value="$PROJECT_DIR$/042/problem_042.py" />
+        <option value="$PROJECT_DIR$/043/problem_043.py" />
       </list>
     </option>
   </component>
@@ -558,7 +558,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="042" />
+              <option name="myItemId" value="043" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,26 +604,7 @@
       <recent name="$PROJECT_DIR$/134" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_042">
-    <configuration default="false" name="problem_038" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/038" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/038/problem_038.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem_043">
     <configuration default="false" name="problem_039" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -694,6 +675,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/042/problem_042.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_043" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/043" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/043/problem_043.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -823,19 +823,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_038" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_039" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_040" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_041" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_042" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_039" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_040" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_041" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_042" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem_043" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_042" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_041" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_040" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_039" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_038" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem_043" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_042" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_041" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_040" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_039" />
       </list>
     </recent_temporary>
   </component>
@@ -922,13 +922,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/057/problem_057.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="259" max-vertical-offset="990">
-          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/044/problem_044.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
@@ -1286,8 +1279,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/042/problem_042.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9564586" vertical-offset="1" max-vertical-offset="765">
+        <state vertical-scroll-proportion="-11.981818" vertical-offset="1" max-vertical-offset="765">
           <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/043/problem_043.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.556213" vertical-offset="119" max-vertical-offset="825">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -23,22 +23,28 @@ __author__ = 'vivek'
 import time
 from itertools import permutations
 
-startTime = time.clock()
 
-numbers = [''.join(p) for p in permutations('0123456789')]
-count = 0
-answers = []
+def main():
+    start_time = time.clock()
 
-for number in numbers:
-    if int(number[1:4])%2==0 and int(number[2:5])%3==0 and int(number[3:6])%5==0 and int(number[4:7])%7==0 and int(number[5:8])%11==0 and int(number[6:9])%13==0 and int(number[7:10])%17==0 :
-        count += 1
-        answers.append(number)
+    numbers = [''.join(p) for p in permutations('0123456789')]
+    count = 0
+    answers = []
 
-total = 0
+    for number in numbers:
+        if int(number[1:4]) % 2 == 0 and int(number[2:5]) % 3 == 0 and int(number[3:6]) % 5 == 0 and int(number[4:7]) % 7 == 0 and int(number[5:8]) % 11 == 0 and int(number[6:9]) % 13 == 0 and int(number[7:10]) % 17 == 0:
+            count += 1
+            answers.append(number)
 
-for answer in answers:
-    total += int(answer)
-print(total)
+    total = 0
+
+    for answer in answers:
+        total += int(answer)
+    print(total)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == '__main__':
+    main()
+
