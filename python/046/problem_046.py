@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 
 
 """
@@ -25,68 +26,70 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
 
-prime_numbers = []
-
-
-def isPrime(number) :
+def is_prime(number):
 
     if number < 0:
         return 0
-    elif number == 2 or number == 3 :
+    elif number == 2 or number == 3:
         return 1
-    elif number % 2 == 0 or number % 3 ==0 or number == 1 :
+    elif number % 2 == 0 or number % 3 == 0 or number == 1:
         return 0
-    else :
+    else:
         start = 5
-        while (start <= int(math.sqrt(number))) :
-            if(number % start == 0) :
+        while start <= int(math.sqrt(number)):
+            if number % start == 0:
                 return 0
                 break
-            if(number % (start+2) == 0) :
+            if number % (start+2) == 0:
                 return 0
                 break
-            start = start + 6
+            start += 6
         return 1
 
-square_sums = [2*i*i for i in xrange(1,100)]
 
-for x in xrange(1,10000):
-    if isPrime(x):
-        prime_numbers.append(x)
+def main():
 
-print("Prime Numbers Found")
+    start_time = time.clock()
 
-number = 9
+    prime_numbers = []
 
-while(1):
-    if number not in prime_numbers:
-        found = 0
-        prime_count = 0
-        prime_number = prime_numbers[prime_count]
+    square_sums = [2*i*i for i in xrange(1, 100)]
 
-        while(prime_number<number):
-            square_count = 0
-            addition = prime_number + square_sums[square_count]
+    for x in xrange(1, 10000):
+        if is_prime(x):
+            prime_numbers.append(x)
 
-            while(addition<=number):
-                if addition == number:
-                    found = 1
-                    break
-                square_count += 1
-                addition = prime_number + square_sums[square_count]
+    num = 9
 
-            if found == 1:
-                break
-            prime_count += 1
+    while 1:
+        if num not in prime_numbers:
+            found = 0
+            prime_count = 0
             prime_number = prime_numbers[prime_count]
 
-    if found == 0:
-        print("Found")
-        print(number)
-        break
-    number = number + 2
+            while prime_number < num:
+                square_count = 0
+                addition = prime_number + square_sums[square_count]
 
+                while addition <= num:
+                    if addition == num:
+                        found = 1
+                        break
+                    square_count += 1
+                    addition = prime_number + square_sums[square_count]
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+                if found == 1:
+                    break
+                prime_count += 1
+                prime_number = prime_numbers[prime_count]
+
+        if found == 0:
+            print(num)
+            break
+        num += 2
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
