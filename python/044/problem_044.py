@@ -28,14 +28,12 @@ def pentagonal(n):
 
 
 penta_numbers = [pentagonal(x) for x in xrange(1,5000)]
-#print(62710501 in penta_numbers)
 
 print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
 answers = []
 
 print(penta_numbers[1998])
 print(penta_numbers[4998])
-#print(len(penta_numbers))
 
 for i in xrange(0,1999):
     for j in xrange(i+1,1999):

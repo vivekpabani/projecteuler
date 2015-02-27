@@ -20,12 +20,19 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-triangle_numbers = [n*(n+1)/2 for n in xrange(1,100000)]
-pentagonal_numbers = [n*(3*n-1)/2 for n in xrange(1,100000)]
-hexagonal_numbers = [n*(2*n-1) for n in xrange(1,100000)]
+def main():
 
-print list(set(list(set(hexagonal_numbers).intersection(pentagonal_numbers))).intersection(triangle_numbers))[2]
+    start_time = time.clock()
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    triangle_numbers = [n*(n+1)/2 for n in xrange(1, 100000)]
+    pentagonal_numbers = [n*(3*n-1)/2 for n in xrange(1, 100000)]
+    hexagonal_numbers = [n*(2*n-1) for n in xrange(1, 100000)]
+
+    print list(set(list(set(hexagonal_numbers).intersection(pentagonal_numbers))).intersection(triangle_numbers))[2]
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
