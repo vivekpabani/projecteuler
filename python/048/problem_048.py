@@ -13,14 +13,18 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-total = 0
+def main():
+    start_time = time.clock()
 
-for number in xrange(1,1001):
-    total += pow(number,number)
-#print(total)
-#number = '123456789'
-print(str(total)[-10:])
+    total = 0
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for number in xrange(1, 1001):
+        total += pow(number, number)
+    print(str(total)[-10:])
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
