@@ -34,9 +34,10 @@ def combination(amount, denom):
 
 
 def main():
+
     start_time = time.clock()
     
-    print combination(200,7)
+    print combination(200, 7)
 
     print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
