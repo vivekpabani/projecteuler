@@ -28,20 +28,26 @@ import time
 from operator import mul
 from fractions import Fraction
 
-startTime = time.clock()
+
+def nck(n, k):
+
+    return int(reduce(mul, (Fraction(n-i, i+1) for i in xrange(k)), 1))
 
 
-def nCk(n,k):
+def main():
 
-    return int(reduce(mul, (Fraction(n-i, i+1) for i in range(k)), 1) )
+    start_time = time.clock()
 
-count = 0
+    count = 0
 
-for num1 in xrange(1,101):
-    for num2 in xrange(1, num1+1):
-        if nCk(num1,num2) > 1000000:
-            count += 1
+    for num1 in xrange(1, 101):
+        for num2 in xrange(1, num1+1):
+            if nck(num1, num2) > 1000000:
+                count += 1
 
-print(count)
+    print(count)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
