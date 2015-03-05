@@ -10,44 +10,51 @@ NOTE: Do not count spaces or hyphens. For example, 342 (three hundred and forty-
 
 """
 
-ones = ['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine']
-double = ['Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen']
-tens = ['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety']
-hundreds = ['','','','Hundred','Thousand']
 
-words = 0
+def main():
 
-for num in xrange(1,1001) :
+    ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
+    double = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen']
+    tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety']
+    hundreds = ['', '', '', 'Hundred', 'Thousand']
 
-    word = ''
+    words = 0
+
+    for num in xrange(1, 1001):
+
+        word = ''
     
-    if len(str(num)) == 4 :
-        digit = int(num/1000)
-        word = word + ones[digit] + hundreds[4]
-        num = num%1000
+        if len(str(num)) == 4:
+            digit = int(num/1000)
+            word = word + ones[digit] + hundreds[4]
+            num %= 1000
     
-    if len(str(num)) == 3 :
-        digit = int(num/100)
-        word = word + ones[digit] + hundreds[3]
-        num = num%100
+        if len(str(num)) == 3:
+            digit = int(num/100)
+            word = word + ones[digit] + hundreds[3]
+            num %= 100
 
-        if num <> 0 :
-            word = word + 'And'
+            if num:
+                word += 'And'
     
-    if len(str(num)) == 2 :
-        digit = int(num/10)
+        if len(str(num)) == 2:
+            digit = int(num/10)
         
-        if(digit == 1):
-            num = num%10
-            word = word + double[num]
-            num = 0
-        else :
-            word = word + tens[digit]
-            num = num%10
+            if digit == 1:
+                num %= 10
+                word += double[num]
+                num = 0
+            else:
+                word += tens[digit]
+                num %= 10
     
-    if len(str(num)) == 1 :
-        word = word + ones[num]
+        if len(str(num)) == 1:
+            word += ones[num]
     
-    words = words + len(word)
+        words += len(word)
 
-print words
+    print words
+
+
+if __name__ == '__main__':
+    main()
