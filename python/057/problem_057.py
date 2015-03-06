@@ -25,10 +25,6 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
-
-number = 1/2
-
 
 def term_calc(numerator, denominator):
     if numerator > 0:
@@ -46,15 +42,23 @@ def ans_calc(numerator, denominator):
     return ans_num, ans_denom
 
 
-start_num = 0
-start_denom = 1
-count = 0
-for i in xrange(1000):
-    start_denom, start_num = term_calc(start_num,start_denom)
-    answer_num, answer_denom = ans_calc(start_num,start_denom)
+def main():
+    start_time = time.clock()
 
-    if len(str(answer_num)) > len(str(answer_denom)):
-        count += 1
+    start_num = 0
+    start_denom = 1
+    count = 0
 
-print(count)
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for i in xrange(1000):
+        start_denom, start_num = term_calc(start_num, start_denom)
+        answer_num, answer_denom = ans_calc(start_num, start_denom)
+
+        if len(str(answer_num)) > len(str(answer_denom)):
+            count += 1
+
+    print(count)
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
