@@ -25,8 +25,6 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
-
 
 def is_prime(number):
     if number < 0:
@@ -49,6 +47,8 @@ def is_prime(number):
 
 
 def main():
+
+    start_time = time.clock()
     num = 1
     step = 2
     dia = 1
@@ -64,10 +64,11 @@ def main():
             break
         step += 2
 
-    print(num,dia,prime_count)
+    print(num, dia,prime_count)
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
 if __name__ == "__main__":
     main()
 
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+

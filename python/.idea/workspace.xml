@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/057/problem_057.py" afterPath="$PROJECT_DIR$/057/problem_057.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/058/problem_058.py" afterPath="$PROJECT_DIR$/058/problem_058.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -30,16 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="problem_009.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/009/problem_009.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="problem_010.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/010/problem_010.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,18 +103,28 @@
       <file leaf-file-name="problem_017.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/017/problem_017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="990">
               <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_057.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="problem_057.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/057/problem_057.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.97633135" vertical-offset="285" max-vertical-offset="1050">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
               <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_058.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/058/problem_058.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2204142" vertical-offset="150" max-vertical-offset="1185">
+              <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -156,7 +156,6 @@
         <option value="$PROJECT_DIR$/061/problem_061.py" />
         <option value="$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py" />
         <option value="$PROJECT_DIR$/096/problem_096.py" />
-        <option value="$PROJECT_DIR$/058/problem_058.py" />
         <option value="$PROJECT_DIR$/025/problem_025.py" />
         <option value="$PROJECT_DIR$/026/problem_026.py" />
         <option value="$PROJECT_DIR$/027/problem_027.py" />
@@ -189,6 +188,7 @@
         <option value="$PROJECT_DIR$/011/problem_011.py" />
         <option value="$PROJECT_DIR$/017/problem_017.py" />
         <option value="$PROJECT_DIR$/057/problem_057.py" />
+        <option value="$PROJECT_DIR$/058/problem_058.py" />
       </list>
     </option>
   </component>
@@ -528,20 +528,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="057" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="017" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -813,26 +799,7 @@
       <recent name="$PROJECT_DIR$/134" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_057">
-    <configuration default="false" name="problem_031" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/031" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/031/problem_031.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem_058">
     <configuration default="false" name="problem_053" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -903,6 +870,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/057/problem_057.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_058" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/058" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/058/problem_058.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -1032,19 +1018,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_031" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_053" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_056" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_017" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_057" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_053" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_056" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_017" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_057" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem_058" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_057" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_017" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_056" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_053" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_031" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem_058" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_057" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_017" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_056" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_053" />
       </list>
     </recent_temporary>
   </component>
@@ -1081,7 +1067,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1198,13 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="780">
           <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/058/problem_058.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1170">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1415,7 +1394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1493,8 +1471,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/057/problem_057.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97633135" vertical-offset="285" max-vertical-offset="1050">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/058/problem_058.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2204142" vertical-offset="150" max-vertical-offset="1185">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
           <folding />
         </state>
       </provider>
