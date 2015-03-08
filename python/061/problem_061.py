@@ -25,8 +25,6 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
-
 
 def triangle(num):
     return num*(num+1)/2
@@ -51,121 +49,122 @@ def heptagonal(num):
 def octagonal(num):
     return num*(3*num - 2)
 
-tri = []
-squa = []
-penta = []
-hexa = []
-hepta = []
-octa = []
 
+def main():
 
-all_numbers = []
+    startTime = time.clock()
 
+    tri = []
+    squa = []
+    penta = []
+    hexa = []
+    hepta = []
+    octa = []
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = triangle(number)
-    if answer > 999:
-        tri.append(answer)
-    number += 1
+    all_numbers = []
 
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = triangle(number)
+        if answer > 999:
+            tri.append(answer)
+        number += 1
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = square(number)
-    if answer > 999:
-        squa.append(answer)
-    number += 1
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = square(number)
+        if answer > 999:
+            squa.append(answer)
+        number += 1
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = pentagonal(number)
-    if answer > 999 and answer < 10000:
-        penta.append(answer)
-    number += 1
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = pentagonal(number)
+        if 999 < answer < 10000:
+            penta.append(answer)
+        number += 1
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = hexagonal(number)
-    if answer > 999 and answer < 10000:
-        hexa.append(answer)
-    number += 1
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = hexagonal(number)
+        if 999 < answer < 10000:
+            hexa.append(answer)
+        number += 1
 
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = heptagonal(number)
+        if 999 < answer < 10000:
+            hepta.append(answer)
+        number += 1
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = heptagonal(number)
-    if answer > 999 and answer < 10000:
-        hepta.append(answer)
-    number += 1
+    answer = 0
+    number = 1
+    while answer < 10000:
+        answer = octagonal(number)
+        if 999 < answer < 10000:
+            octa.append(answer)
+        number += 1
 
+    all_numbers.append(tri)
+    all_numbers.append(squa)
+    all_numbers.append(penta)
+    all_numbers.append(hexa)
+    all_numbers.append(hepta)
+    all_numbers.append(octa)
 
-answer = 0
-number = 1
-while answer < 10000:
-    answer = octagonal(number)
-    if answer > 999 and answer < 10000:
-        octa.append(answer)
-    number += 1
+    sets1 = []
+    sets2 = []
 
+    for i in xrange(6):
+        for j in xrange(6):
+            sets1 = []
+            if i != j:
+                for num1 in all_numbers[i]:
+                    for num2 in all_numbers[j]:
+                        if str(num1)[-2:] == str(num2)[:2]:
+                            sets1.append((num1, num2))
 
-all_numbers.append(tri)
-all_numbers.append(squa)
-all_numbers.append(penta)
-all_numbers.append(hexa)
-all_numbers.append(hepta)
-all_numbers.append(octa)
-
-sets1 = []
-sets2 = []
-
-for i in xrange(6):
-    for j in xrange(6):
-        sets1 = []
-        if i != j:
-            for num1 in all_numbers[i]:
-                for num2 in all_numbers[j]:
-                    if str(num1)[-2:] == str(num2)[:2]:
-                        sets1.append((num1,num2))
-
-        for k in xrange(6):
-            sets2 = []
-            if i!=k and j!=k:
-                for num1 in all_numbers[k]:
-                    for num2 in sets1:
-                        if str(num1)[-2:] == str(num2[0])[:2]:
-                            sets2.append((num1,num2[0],num2[1]))
-
-            for l in xrange(6):
-                sets3 = []
-                if i!=l and j!=l and k!=l:
-                    for num1 in all_numbers[l]:
-                        for num2 in sets2:
+            for k in xrange(6):
+                sets2 = []
+                if i != k and j != k:
+                    for num1 in all_numbers[k]:
+                        for num2 in sets1:
                             if str(num1)[-2:] == str(num2[0])[:2]:
-                                sets3.append((num1,num2[0],num2[1],num2[2]))
+                                sets2.append((num1, num2[0], num2[1]))
 
-                for m in xrange(6):
-                    sets4 = []
-                    if i!=m and j!=m and k!=m and l!=m:
-                        for num1 in all_numbers[m]:
-                            for num2 in sets3:
+                for l in xrange(6):
+                    sets3 = []
+                    if i != l and j != l and k != l:
+                        for num1 in all_numbers[l]:
+                            for num2 in sets2:
                                 if str(num1)[-2:] == str(num2[0])[:2]:
-                                    sets4.append((num1,num2[0],num2[1],num2[2], num2[3]))
+                                    sets3.append((num1, num2[0], num2[1], num2[2]))
 
-                    for n in xrange(6):
-                        sets5 = []
-                        if i!=n and j!=n and k!=n and l!=n and m!=n:
-                            for num1 in all_numbers[n]:
-                                for num2 in sets4:
-                                    if str(num1)[-2:] == str(num2[0])[:2] and str(num1)[:2] == str(num2[4])[-2:]:
-                                        sets5.append((num1,num2[0],num2[1],num2[2], num2[3], num2[4]))
+                    for m in xrange(6):
+                        sets4 = []
+                        if i != m and j != m and k != m and l != m:
+                            for num1 in all_numbers[m]:
+                                for num2 in sets3:
+                                    if str(num1)[-2:] == str(num2[0])[:2]:
+                                        sets4.append((num1, num2[0], num2[1], num2[2], num2[3]))
+
+                        for n in xrange(6):
+                            sets5 = []
+                            if i != n and j != n and k != n and l != n and m != n:
+                                for num1 in all_numbers[n]:
+                                    for num2 in sets4:
+                                        if str(num1)[-2:] == str(num2[0])[:2] and str(num1)[:2] == str(num2[4])[-2:]:
+                                            sets5.append((num1, num2[0], num2[1], num2[2], num2[3], num2[4]))
+                            if sets5:
+                                print(sets5)
+                                break
                         if sets5:
-                            print(sets5)
                             break
                     if sets5:
                         break
@@ -175,10 +174,12 @@ for i in xrange(6):
                 break
         if sets5:
             break
-    if sets5:
-        break
 
-print(sum(sets5[0]))
+    print(sum(sets5[0]))
+
+    print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
 
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == '__main__':
+    main()
+
