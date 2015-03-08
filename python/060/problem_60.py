@@ -17,10 +17,6 @@ import math
 
 startTime = time.clock()
 
-p2 = []
-p3 = []
-p4 = []
-p5 = []
 
 def is_prime(number):
     if number < 0:
@@ -41,6 +37,14 @@ def is_prime(number):
             start += 6
         return 1
 
+
+def main():
+    pass
+
+p2 = []
+p3 = []
+p4 = []
+p5 = []
 
 prime_numbers = [x for x in xrange(1,1500) if is_prime(x)]
 
