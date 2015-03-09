@@ -15,17 +15,25 @@ __author__ = 'vivek'
 import time
 from collections import Counter
 
-startTime = time.clock()
 
-cubes = [''.join(sorted(str(i**3))) for i in xrange(0, 10000)]
+def main():
 
-perm_count = Counter(cubes)
-answer = 10000
+    start_time = time.clock()
 
-for key in perm_count:
-    if perm_count[key] == 5:
-        answer = min(answer, cubes.index(key))
+    cubes = [''.join(sorted(str(i**3))) for i in xrange(0, 10000)]
 
-print(answer**3)
+    perm_count = Counter(cubes)
+    answer = 10000
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for key in perm_count:
+        if perm_count[key] == 5:
+            answer = min(answer, cubes.index(key))
+
+    print(answer**3)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
+
