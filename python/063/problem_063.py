@@ -14,36 +14,44 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-count = 2
-total = 0
-power = 1
-newStart = 1
+def main():
 
-while count > 1 and newStart:
+    start_time = time.clock()
 
-    count = 0
-    length = 0
-    start = newStart
-    newStart = 0
+    count = 2
+    total = 0
+    power = 1
+    new_start = 1
 
-    while length <= power:
+    while count > 1 and new_start:
 
-        answer = pow(start, power)
-        length = len(str(answer))
+        count = 0
+        length = 0
+        start = new_start
+        new_start = 0
 
-        if length == power:
-            total += 1
+        while length <= power:
 
-            if newStart == 0:
-                newStart = start
+            answer = pow(start, power)
+            length = len(str(answer))
 
-        start += 1
-        count += 1
+            if length == power:
+                total += 1
 
-    power += 1
+                if new_start == 0:
+                    new_start = start
 
-print("total", total)
+            start += 1
+            count += 1
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+        power += 1
+
+    print("total", total)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
+
