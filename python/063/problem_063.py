@@ -51,7 +51,5 @@ def main():
 
     print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
-
 if __name__ == '__main__':
     main()
-
