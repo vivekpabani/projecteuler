@@ -13,9 +13,6 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
-
-
 penta = []
 partition_numbers = list()
 partition_numbers.append(1)
@@ -33,7 +30,6 @@ def alternate(num):
 
 
 def partition(num):
-    global partition_numbers
     add = 0
     i = 0
     start = 0
@@ -54,24 +50,30 @@ def partition(num):
     return add
 
 
-alt_num = 1
-found = 0
-number = 1
+def main():
 
-for i in xrange(60000):
-    penta.append(pentagonal(alt_num))
-    alt_num = alternate(alt_num)
+    start_time = time.clock()
+
+    alt_num = 1
+    found = 0
+    number = 1
+
+    for i in xrange(60000):
+        penta.append(pentagonal(alt_num))
+        alt_num = alternate(alt_num)
+
+    while not found:
+        partition_number = partition(number)
+        partition_numbers.append(partition_number)
+
+        if partition_number % 1000000 == 0:
+            found = 1
+            print(number)
+
+        number +=1
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
 
-while not found:
-    partition_number = partition(number)
-    partition_numbers.append(partition_number)
-
-    if partition_number % 1000000 == 0:
-        found = 1
-        print(number)
-        print(partition_number)
-
-    number +=1
-
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == '__main__':
+    main()
