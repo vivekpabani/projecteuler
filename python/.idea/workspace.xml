@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/063/problem_063.py" afterPath="$PROJECT_DIR$/063/problem_063.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/067/problem_067.py" afterPath="$PROJECT_DIR$/067/problem_067.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/078/problem_078.py" afterPath="$PROJECT_DIR$/078/problem_078.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,11 +79,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_067.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="problem_067.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/067/problem_067.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9796807" vertical-offset="0" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="-12.272727" vertical-offset="0" max-vertical-offset="1020">
               <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_076.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/076/problem_076.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="1245">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_076a.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/076/problem_076a.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1200">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_078.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/078/problem_078.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.95791" vertical-offset="510" max-vertical-offset="1275">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +136,6 @@
         <option value="$PROJECT_DIR$/092/problem_092.py" />
         <option value="$PROJECT_DIR$/081/problem_081.py" />
         <option value="$PROJECT_DIR$/080/problem_080.py" />
-        <option value="$PROJECT_DIR$/078/problem_078.py" />
         <option value="$PROJECT_DIR$/076/problem_076.py" />
         <option value="$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py" />
         <option value="$PROJECT_DIR$/096/problem_096.py" />
@@ -150,6 +177,7 @@
         <option value="$PROJECT_DIR$/062/problem_062.py" />
         <option value="$PROJECT_DIR$/063/problem_063.py" />
         <option value="$PROJECT_DIR$/067/problem_067.py" />
+        <option value="$PROJECT_DIR$/078/problem_078.py" />
       </list>
     </option>
   </component>
@@ -392,48 +420,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="076" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="067" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="063" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="061" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -718,64 +704,7 @@
       <recent name="$PROJECT_DIR$/134" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_067">
-    <configuration default="false" name="problem_60" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/060" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/060/problem_60.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="problem_061" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/061" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/061/problem_061.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="problem_062" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/062" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/062/problem_062.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem_078">
     <configuration default="false" name="problem_063" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -808,6 +737,63 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/067/problem_067.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_076" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/076" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/076/problem_076.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_076a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/076" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/076/problem_076a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_078" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/078" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/078/problem_078.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -937,19 +923,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_60" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_061" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_062" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_063" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_067" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_063" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_067" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_076" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_076a" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem_078" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_067" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_063" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_062" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_061" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_60" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem_078" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_076a" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_076" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_067" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_063" />
       </list>
     </recent_temporary>
   </component>
@@ -1036,27 +1022,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/PycharmProjects/cs429/college/assignment0/boolean_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70564514" vertical-offset="45" max-vertical-offset="2130">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/027/problem_027.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5325444" vertical-offset="0" max-vertical-offset="1335">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/096/problem_096.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49596775" vertical-offset="81" max-vertical-offset="825">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/026/problem_026.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69521046" vertical-offset="226" max-vertical-offset="990">
@@ -1393,8 +1358,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/067/problem_067.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9796807" vertical-offset="0" max-vertical-offset="1020">
+        <state vertical-scroll-proportion="-12.272727" vertical-offset="0" max-vertical-offset="1020">
           <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/076/problem_076.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/076/problem_076a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1200">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/078/problem_078.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95791" vertical-offset="510" max-vertical-offset="1275">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
