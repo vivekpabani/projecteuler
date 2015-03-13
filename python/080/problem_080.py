@@ -17,8 +17,6 @@ __author__ = 'vivek'
 import time
 from decimal import *
 
-startTime = time.clock()
-
 
 def find_sum(num):
     add = 0
@@ -30,17 +28,24 @@ def find_sum(num):
     return add
 
 
-getcontext().prec = 102
+def main():
 
-answer = 0
+    start_time = time.clock()
+    getcontext().prec = 102
 
-for number in xrange(1, 100):
-    square_root = str(Decimal(number).sqrt())
+    answer = 0
 
-    if len(square_root) > 1:
-        decimal = int(square_root[:1] + square_root[-101:-2])
-        answer += find_sum(decimal)
+    for number in xrange(1, 100):
+        square_root = str(Decimal(number).sqrt())
 
-print(answer)
+        if len(square_root) > 1:
+            decimal = int(square_root[:1] + square_root[-101:-2])
+            answer += find_sum(decimal)
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(answer)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
+
