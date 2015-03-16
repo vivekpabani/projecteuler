@@ -22,8 +22,6 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
-
 sum_square_o = [1]
 sum_square_e = [89]
 number_status = [0]*10000001
@@ -33,7 +31,7 @@ def sum_square_base(number):
     global sum_square_o
     global sum_square_e
     addition = number
-    square_sum_numbers = []
+    square_sum_numbers = list()
 
     while 1:
         if addition in sum_square_o:
@@ -79,7 +77,7 @@ def sum_square(number):
 
     digits = []
     while addition > 0:
-        digits.append(addition%10)
+        digits.append(addition % 10)
         addition /= 10
 
     for digit in digits:
@@ -93,14 +91,22 @@ def sum_square(number):
         return 1
     else:
         return 0
+    
 
-for x in xrange(1, 568):
-    sum_square_base(x)
+def main():
+    start_time = time.clock()
 
-for x in xrange(568, 10000000):
-    if not sum_square(x):
-        print(x, ': 0')
+    for x in xrange(1, 568):
+        sum_square_base(x)
 
-print(number_status.count(1)+1)
+    for x in xrange(568, 10000000):
+        if not sum_square(x):
+            print(x, ': 0')
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(number_status.count(1)+1)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
