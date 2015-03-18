@@ -19,22 +19,29 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
 
-with open("base_exp.txt") as f:
-    numbers = [line.split(',') for line in f.readlines()]
+def main():
+    start_time = time.clock()
 
-count = 1
-maximum = 0
-answer = 0
+    with open("base_exp.txt") as f:
+        numbers = [line.split(',') for line in f.readlines()]
 
-for number in numbers:
-    value = int(number[1])* math.log10(int(number[0]))
-    if value > maximum:
-        maximum = value
-        answer = count
-    count += 1
+    count = 1
+    maximum = 0
+    answer = 0
 
-print answer
+    for number in numbers:
+        value = int(number[1]) * math.log10(int(number[0]))
+        if value > maximum:
+            maximum = value
+            answer = count
+        count += 1
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print answer
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
+
