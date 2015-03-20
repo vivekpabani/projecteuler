@@ -20,7 +20,7 @@ def main():
 
     words = 0
 
-    for num in xrange(1, 1001):
+    for num in xrange(1, 101):
 
         word = ''
     
