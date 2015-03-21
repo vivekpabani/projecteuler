@@ -9,17 +9,23 @@ Problem Definition :
 """
 
 # First two Fibonacci set to 1,1.
-a = 1
-b = 1
 
-total = 0
 
-#While the Fibonnaci is less than the given limit - 4 million, find next Fibonnaci and add to total if it is even.
+def main():
 
-while b < 4000000 :
-    a,b = b,a+b
+    a = 1
+    b = 1
+
+    total = 0
+
+    while b < 4000000:
+        a, b = b, a+b
     
-    if b%2 == 0 :
-        total = total + b
+        if b % 2 == 0:
+            total += b
 
-print total
+    print total
+
+if __name__ == '__main__':
+    main()
+
