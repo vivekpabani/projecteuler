@@ -17,20 +17,28 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
-maximum = 100000001
-limit = int(math.sqrt(maximum))+1
 
-matrix = [[0 for x in xrange(limit)] for x in xrange(limit)]
-answers = []
+def main():
 
-for i in xrange(1,limit):
-    for j in xrange(i, limit):
-        matrix[i][j] =  matrix[i][j-1] + (j*j)
-        if str(matrix[i][j])==str(matrix[i][j])[::-1] and matrix[i][j] < maximum and j!= i:
-            answers.append(matrix[i][j])
+    start_time = time.clock()
+    maximum = 100000001
+    limit = int(math.sqrt(maximum))+1
 
-print(sum(set(answers)))
+    matrix = [[0 for x in xrange(limit)] for x in xrange(limit)]
+    answers = list()
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    for i in xrange(1, limit):
+        for j in xrange(i, limit):
+            matrix[i][j] =  matrix[i][j-1] + (j*j)
+            if str(matrix[i][j]) == str(matrix[i][j])[::-1] and matrix[i][j] < maximum and j != i:
+                answers.append(matrix[i][j])
+
+    print(sum(set(answers)))
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
+
 
