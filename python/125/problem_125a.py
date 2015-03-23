@@ -16,25 +16,31 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-answers = set()
-answer = 0
+def main():
+    start_time = time.clock()
 
-for i in xrange(1, 10001):
-    total = i*i
-    for j in xrange(i+1, 10000):
-        total += j*j
-        if total > 100000000:
-            break
-        answers.add(total)
+    answers = set()
+    answer = 0
 
-for number in answers:
-    s = str(number)
+    for i in xrange(1, 10001):
+        total = i*i
+        for j in xrange(i+1, 10000):
+            total += j*j
+            if total > 100000000:
+                break
+            answers.add(total)
 
-    if s == s[::-1]:
-        answer += number
+    for number in answers:
+        s = str(number)
 
-print(answer)
+        if s == s[::-1]:
+            answer += number
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(answer)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+if __name__ == '__main__':
+    main()
+
