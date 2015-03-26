@@ -12,7 +12,13 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 """
 
-sum_of_squares = sum(x**2 for x in xrange(1,101))
-square_of_total = sum(xrange(1,101))**2
 
-print square_of_total - sum_of_squares
+def main():
+    sum_of_squares = sum(x**2 for x in xrange(1, 101))
+    square_of_total = sum(xrange(1, 101)) ** 2
+
+    print square_of_total - sum_of_squares
+
+
+if __name__ == '__main__':
+    main()
