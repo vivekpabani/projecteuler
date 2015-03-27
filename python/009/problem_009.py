@@ -13,11 +13,20 @@ Find the product abc.
 import math
 import sys
 
-for a in xrange(1,1001) :
-    for b in xrange (a,1001) :
-        c = a**2 + b**2
-        d=math.sqrt(c)
-        if d.is_integer() and a+b+d == 1000:
-            print a, b, int(d) 
-            sys.exit(0)
+
+def main():
+
+    for a in xrange(1, 1001):
+        for b in xrange (a, 1001):
+            c = a**2 + b**2
+            d = math.sqrt(c)
+
+            if d.is_integer() and a+b+d == 1000:
+                print a, b, int(d)
+                sys.exit(0)
+
+
+if __name__ == '__main__':
+    main()
+
         
