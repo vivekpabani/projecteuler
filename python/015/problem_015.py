@@ -9,13 +9,20 @@ How many such routes are there through a 20*20 grid?
 
 """
 
-box = [[0]*21]*21
 
-for i in xrange (0,21) :
-    for j in xrange (0,21) :
-        if i == 0 or j == 0 :
-            box[i][j] = 1
-        else :
-            box[i][j] = box[i-1][j] + box[i][j-1]
+def main():
 
-print box[20][20]
+    box = [[0]*21]*21
+
+    for i in xrange(0, 21):
+        for j in xrange(0, 21):
+            if i == 0 or j == 0:
+                box[i][j] = 1
+            else:
+                box[i][j] = box[i-1][j] + box[i][j-1]
+
+    print box[20][20]
+
+
+if __name__ == '__main__':
+    main()

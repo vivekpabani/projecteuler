@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a4e0e33-02de-4619-b964-7407fee39ee1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/013/problem_013.py" afterPath="$PROJECT_DIR$/013/problem_013.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/015/problem_015.py" afterPath="$PROJECT_DIR$/015/problem_015.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,16 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="problem_005.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/005/problem_005.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="600">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="problem_009.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/009/problem_009.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,21 +89,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_013.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="problem_013.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/013/problem_013.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.934688" vertical-offset="1186" max-vertical-offset="1935">
+            <state vertical-scroll-proportion="-11.709091" vertical-offset="1186" max-vertical-offset="1935">
               <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problem_004.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/004/problem_004.py">
+      <file leaf-file-name="problem_014.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/014/problem_014.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1170">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem_015.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/015/problem_015.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54435486" vertical-offset="0" max-vertical-offset="744">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -137,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/030/problem_030.py" />
         <option value="$PROJECT_DIR$/032/problem_032.py" />
         <option value="$PROJECT_DIR$/033/problem_033.py" />
         <option value="$PROJECT_DIR$/034/problem_034.py" />
@@ -188,6 +187,7 @@
         <option value="$PROJECT_DIR$/009/problem_009.py" />
         <option value="$PROJECT_DIR$/008/problem_008.py" />
         <option value="$PROJECT_DIR$/013/problem_013.py" />
+        <option value="$PROJECT_DIR$/015/problem_015.py" />
       </list>
     </option>
   </component>
@@ -574,26 +574,7 @@
       <recent name="$PROJECT_DIR$/134" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.problem_013">
-    <configuration default="false" name="problem_006" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/006" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/006/problem_006.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem_015">
     <configuration default="false" name="problem_005" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -664,6 +645,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/013/problem_013.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem_015" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/015" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/015/problem_015.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -793,19 +793,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem_006" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem_005" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_008" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_004" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem_013" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem_005" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_008" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_004" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem_013" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem_015" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_013" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_008" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_004" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem_005" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem_006" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem_015" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_013" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_008" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_004" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem_005" />
       </list>
     </recent_temporary>
   </component>
@@ -853,7 +853,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878365" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292789" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1088,20 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/014/problem_014.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/015/problem_015.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/016/problem_016.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -1259,8 +1245,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/013/problem_013.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.934688" vertical-offset="1186" max-vertical-offset="1935">
+        <state vertical-scroll-proportion="-11.709091" vertical-offset="1186" max-vertical-offset="1935">
           <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/014/problem_014.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1170">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/015/problem_015.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54435486" vertical-offset="0" max-vertical-offset="744">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding />
         </state>
       </provider>
