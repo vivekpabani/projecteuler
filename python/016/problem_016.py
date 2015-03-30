@@ -14,16 +14,22 @@ __author__ = 'vivek'
 
 import time
 
-startTime = time.clock()
 
-number = pow(2,1000)
-add = 0
+def main():
+    start_time = time.clock()
 
-while number > 0 :
-    digit = number % 10
-    number = number/10
-    add = add + digit
+    number = pow(2, 1000)
+    add = 0
 
-print(add)
+    while number > 0 :
+        digit = number % 10
+        number /= 10
+        add += digit
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+    print(add)
+
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
+
+
+if __name__ == '__main__':
+    main()
