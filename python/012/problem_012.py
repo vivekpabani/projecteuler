@@ -25,29 +25,33 @@ What is the value of the first triangle number to have over five hundred divisor
 import math
 
 
-def find_triangle(i) :
+def find_triangle(i):
     return i*(i+1)/2
 
 
-def find_count(i) :
+def find_count(i):
     number = 1
     count = 0
-    while number < int(math.sqrt(i)) :
-        if i % number == 0 :
-            count = count+2
-        number = number + 1
-    if math.sqrt(i) == number :
-        count = count + 1
+    while number < int(math.sqrt(i)):
+        if i % number == 0:
+            count += 2
+        number += 1
+    if math.sqrt(i) == number:
+        count += 1
     return count
     
 
-final_count, triangle = 0, 0
-num = 0
+def main():
 
+    final_count, triangle = 0, 0
+    num = 0
 
-while final_count < 500 :
-    num = num+1
-    triangle = find_triangle(num)
-    final_count = find_count(triangle)
+    while final_count < 500:
+        num += 1
+        triangle = find_triangle(num)
+        final_count = find_count(triangle)
 
-print triangle
+    print triangle
+
+if __name__ == '__main__':
+    main()
