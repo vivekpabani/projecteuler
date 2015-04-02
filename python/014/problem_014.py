@@ -31,38 +31,38 @@ for i in xrange(1,1000001) :
     if numbers[i] == 0 :                    #Only check for unseen numbers (list value  = 0)
         final = i
         dict = {}
-       
+
         while (final > 1) :
             if final<length :               #To check if the value of final is less than the length of list - numbers - to avoid array index out of range error. If so, treat is as a never seen number in the else logic.
-                if numbers[final] == 0 :    #To confirm that the current final value was never seen before during any calculation ( 0 is by default value assigned to every list membeSrs) 
+                if numbers[final] == 0 :    #To confirm that the current final value was never seen before during any calculation ( 0 is by default value assigned to every list membeSrs)
                     dict[final] = 1         #Add the new number to the temp dictionary and assign value = 1 ( i.e. default length = 1 for any single number seen during calculation)
 
                     if final % 2 == 0 :
                         final = final/2
                     else :
                         final = 3*final + 1
-                    
+
                     if final < length :     #To check if the new value of final is less than the length of list - numbers - to avoid array index out of range error.
 
                         if numbers[final] == 0 :        #Never seen logic : if the final value is new, increase values of each current member of dictionary by 1. and this number will be added to the dictionary in the next iteration of while loop.
                             for key in dict :
                                 dict[key] = int(dict[key]) + 1
                         else :                          #Old value logic : if the final value is available in the list, add its corresponding value to each current member of dictionary.
-                            for key in dict :           
+                            for key in dict :
                                 dict[key] = int(dict[key]) + int(numbers[final])
                     else :
                         for key in dict :
                             dict[key] = int(dict[key]) + 1
-                        
-                else : 
+
+                else :
                     final = 1
             else :
-                dict[final] = 1 
+                dict[final] = 1
                 if final % 2 == 0 :
                     final = final/2
                 else :
                     final = 3*final + 1
-                
+
                 for key in dict :                   #Never seen logic.
                     dict[key] = int(dict[key]) + 1
 
