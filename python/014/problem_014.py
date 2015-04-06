@@ -21,53 +21,56 @@ NOTE: Once the chain starts the terms are allowed to go above one million.'''
 """
 
 
-numbers = [0]*10000000
-numbers[1] = 1
-final = 0
-length = len(numbers)
+def main():
 
-for i in xrange(1,1000001) :
+    numbers = [0]*10000000
+    numbers[1] = 1
+    length = len(numbers)
 
-    if numbers[i] == 0 :                    #Only check for unseen numbers (list value  = 0)
-        final = i
-        dict = {}
+    for i in xrange(1, 1000001):
 
-        while (final > 1) :
-            if final<length :               #To check if the value of final is less than the length of list - numbers - to avoid array index out of range error. If so, treat is as a never seen number in the else logic.
-                if numbers[final] == 0 :    #To confirm that the current final value was never seen before during any calculation ( 0 is by default value assigned to every list membeSrs)
-                    dict[final] = 1         #Add the new number to the temp dictionary and assign value = 1 ( i.e. default length = 1 for any single number seen during calculation)
+        if numbers[i] == 0 :                    #Only check for unseen numbers (list value  = 0)
+            final = i
+            num_dict = dict()
 
-                    if final % 2 == 0 :
-                        final = final/2
-                    else :
+            while final > 1:
+                if final<length:               #To check if the value of final is less than the length of list - numbers - to avoid array index out of range error. If so, treat is as a never seen number in the else logic.
+                    if numbers[final] == 0:    #To confirm that the current final value was never seen before during any calculation ( 0 is by default value assigned to every list membeSrs)
+                        num_dict[final] = 1         #Add the new number to the temp dictionary and assign value = 1 ( i.e. default length = 1 for any single number seen during calculation)
+
+                        if final % 2 == 0:
+                            final /= 2
+                        else :
+                            final = 3*final + 1
+
+                        if final < length:     #To check if the new value of final is less than the length of list - numbers - to avoid array index out of range error.
+                            if numbers[final] == 0:        #Never seen logic : if the final value is new, increase values of each current member of dictionary by 1. and this number will be added to the dictionary in the next iteration of while loop.
+                                for key in num_dict:
+                                    num_dict[key] = int(num_dict[key]) + 1
+                            else:                          #Old value logic : if the final value is available in the list, add its corresponding value to each current member of dictionary.
+                                for key in num_dict:
+                                    num_dict[key] = int(num_dict[key]) + int(numbers[final])
+                        else:
+                            for key in num_dict:
+                                num_dict[key] = int(num_dict[key]) + 1
+                    else:
+                        final = 1
+                else:
+                    num_dict[final] = 1
+                    if final % 2 == 0:
+                        final /= 2
+                    else:
                         final = 3*final + 1
 
-                    if final < length :     #To check if the new value of final is less than the length of list - numbers - to avoid array index out of range error.
+                    for key in num_dict:                   #Never seen logic.
+                        num_dict[key] = int(num_dict[key]) + 1
 
-                        if numbers[final] == 0 :        #Never seen logic : if the final value is new, increase values of each current member of dictionary by 1. and this number will be added to the dictionary in the next iteration of while loop.
-                            for key in dict :
-                                dict[key] = int(dict[key]) + 1
-                        else :                          #Old value logic : if the final value is available in the list, add its corresponding value to each current member of dictionary.
-                            for key in dict :
-                                dict[key] = int(dict[key]) + int(numbers[final])
-                    else :
-                        for key in dict :
-                            dict[key] = int(dict[key]) + 1
+            for key in num_dict:
+                if key < length:
+                    numbers[key] = num_dict[key]
 
-                else :
-                    final = 1
-            else :
-                dict[final] = 1
-                if final % 2 == 0 :
-                    final = final/2
-                else :
-                    final = 3*final + 1
+    print numbers.index(max(numbers))
 
-                for key in dict :                   #Never seen logic.
-                    dict[key] = int(dict[key]) + 1
 
-        for key in dict :
-            if key < length :
-                numbers[key] = dict[key]
-
-print numbers.index(max(numbers))
+if __name__ == '__main__':
+    main()
