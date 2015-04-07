@@ -29,12 +29,12 @@ def main():
 
     for i in xrange(1, 1000001):
 
-        if numbers[i] == 0 :                    #Only check for unseen numbers (list value  = 0)
+        if numbers[i] == 0:                    #Only check for unseen numbers (list value  = 0)
             final = i
             num_dict = dict()
 
             while final > 1:
-                if final<length:               #To check if the value of final is less than the length of list - numbers - to avoid array index out of range error. If so, treat is as a never seen number in the else logic.
+                if final < length:               #To check if the value of final is less than the length of list - numbers - to avoid array index out of range error. If so, treat is as a never seen number in the else logic.
                     if numbers[final] == 0:    #To confirm that the current final value was never seen before during any calculation ( 0 is by default value assigned to every list membeSrs)
                         num_dict[final] = 1         #Add the new number to the temp dictionary and assign value = 1 ( i.e. default length = 1 for any single number seen during calculation)
 
