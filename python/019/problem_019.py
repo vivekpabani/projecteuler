@@ -23,7 +23,6 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 import sys
 
 
-
 def find_leap(year_input):
     """function to find if given year is leap year or not."""
     if year_input % 400 == 0:
@@ -70,10 +69,10 @@ def main():
             else:
                 count_year = normal_year
 
-            for months in range(0, 12):
+            for months in xrange(12):
                 if days % 7 == (day - 1):
                     day_first += 1
-                days = days + count_year[months]
+                days += count_year[months]
 
         print day_first
 
