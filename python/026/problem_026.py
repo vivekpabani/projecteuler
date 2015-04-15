@@ -32,8 +32,7 @@ def main():
     start_time = time.clock()
 
     getcontext().prec = 2000
-    length = 0
-    answers = {}
+    answers = dict()
 
     for number in xrange(1, 1001):
         answer = str(Decimal(1)/Decimal(number))[2:]
