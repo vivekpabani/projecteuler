@@ -15,41 +15,41 @@ Find the sum of all the positive integers which cannot be written as the sum of 
 import math
 
 
-def find_sum_factors(i) :
+def find_sum_factors(i):
     number = 2
-    sum = 1
-    while number <= int(math.sqrt(i)) :
-        if i % number == 0 :
-            sum = sum + number + (i/number)
-        number = number + 1
-    if math.sqrt(i) == number - 1 :
-        sum = sum - number
-    return sum
+    ans = 1
+    while number <= int(math.sqrt(i)):
+        if i % number == 0:
+            ans += (number + (i/number))
+        number += 1
+    if math.sqrt(i) == number - 1:
+        ans -= number
+    return ans
 
 
-abundant_numbers = []
-sum_abundant_ref = [0]*60000
-sum_abundant = []
+def main():
+    abundant_numbers = list()
+    sum_abundant_ref = [0]*60000
+    sum_abundant = list()
 
-temp_sum = 0
+    for i in xrange(1, 30000):
+        if i < find_sum_factors(i):
+            abundant_numbers.append(i)
 
-for i in xrange(1,30000):
-    if i < find_sum_factors(i) :
-        abundant_numbers.append(i)
+    length_abundant = len(abundant_numbers)
 
-length_abundant = len(abundant_numbers)
+    for i in xrange(0, length_abundant):
+        for j in xrange(i, length_abundant):
+            temp_sum = abundant_numbers[i]+abundant_numbers[j]
+            sum_abundant_ref[temp_sum] = 1
 
-for i in xrange(0,length_abundant):
-    for j in xrange(i,length_abundant):
-        temp_sum = abundant_numbers[i]+abundant_numbers[j]
-        sum_abundant_ref[temp_sum] = 1
+    for i in xrange(0, 28124):
+        if sum_abundant_ref[i] == 1:
+            sum_abundant.append(i)
 
-length_sum = len(sum_abundant_ref)
+    all_sum = sum(range(1, 28124))
 
-for i in xrange(0,28124):
-    if sum_abundant_ref[i] == 1 :
-        sum_abundant.append(i)
+    print all_sum-sum(sum_abundant)
 
-all_sum = sum(range(1, 28124))
-
-print all_sum-sum(sum_abundant)
+if __name__ == '__main__':
+    main()
