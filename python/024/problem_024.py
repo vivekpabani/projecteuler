@@ -23,7 +23,6 @@ def main():
     result = 0
     result_digits = list()
 
-
     while result != target:
         length = len(digits)
         fact_len = length - 1
