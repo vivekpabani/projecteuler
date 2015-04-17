@@ -14,36 +14,40 @@ __author__ = 'vivek'
 import math
 import time
 
-startTime = time.clock()
 
-digits = [0,1,2,3,4,5,6,7,8,9]
-target = 1000000
-result = 0
-result_digits = []
+def main():
+    start_time = time.clock()
+
+    digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    target = 1000000
+    result = 0
+    result_digits = list()
 
 
-while (result != target):
-    length = len(digits)
-    fact_len = length-1
+    while result != target:
+        length = len(digits)
+        fact_len = length - 1
 
-    for count in xrange(length):
-        if(result + math.factorial(fact_len)>target):
-            break
-        elif (result + math.factorial(fact_len)==target):
-            if(fact_len == 1):
-                result = result +math.factorial(fact_len)
+        for count in xrange(length):
+            if result + math.factorial(fact_len) > target:
                 break
+            elif result + math.factorial(fact_len) == target:
+                if fact_len == 1:
+                    result += math.factorial(fact_len)
+                    break
+                else:
+                    break
             else:
-                break
-        else:
-            result = result +math.factorial(fact_len)
-    result_digits.append(digits[count])
+                result += math.factorial(fact_len)
+        result_digits.append(digits[count])
 
-    del digits[count]
+        del digits[count]
 
+    result_string = ''.join([str(item) for item in (result_digits + digits)])
 
-result_string = ''.join([str(item) for item in (result_digits+digits)])
+    print(result_string)
 
-print(result_string)
+    print "Run time...{} secs \n".format(round(time.clock() - start_time, 4))
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == '__main__':
+    main()
