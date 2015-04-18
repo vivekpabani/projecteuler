@@ -16,25 +16,31 @@ __author__ = 'vivek'
 
 import string
 
-# dictionary with character values of uppercase alphabets.
-alpha_dict = dict((ch, ord(ch)-64) for ch in string.ascii_uppercase)
 
-with open("names.txt") as f:
-    words = f.read()
+def main():
+    # dictionary with character values of uppercase alphabets.
+    alpha_dict = dict((ch, ord(ch)-64) for ch in string.ascii_uppercase)
 
-# replace the quotes and store into a list with coma separator and sort list.
-words = string.replace(words,'"','')
-word_list = words.split(',')
-word_list.sort()
+    with open("names.txt") as f:
+        words = f.read()
 
-# find value of each word, and add to the final total with count multiplication.
-file_total = 0
-count = 0
-for word in word_list:
-    count = count+1
-    word_total = 0
-    for letter in word:
-        word_total = word_total + alpha_dict[letter]
-    file_total = file_total+ (count*word_total)
+    # replace the quotes and store into a list with coma separator and sort list.
+    words = string.replace(words, '"', '')
+    word_list = words.split(',')
+    word_list.sort()
 
-print "File Total = ", file_total
+    # find value of each word, and add to the final total with count multiplication.
+    file_total = 0
+    count = 0
+    for word in word_list:
+        count += 1
+        word_total = 0
+        for letter in word:
+            word_total += alpha_dict[letter]
+        file_total += (count*word_total)
+
+    print "File Total = ", file_total
+
+if __name__ == '__main__':
+    main()
+
