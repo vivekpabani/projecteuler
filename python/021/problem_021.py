@@ -16,28 +16,34 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 import math
 
-def find_sum_factors(i) :
+
+def find_sum_factors(num):
     number = 2
-    sum = 1
+    addition = 1
     
-    while number < int(math.sqrt(i)) :
-        if i % number == 0 :
-            sum = sum + number + (i/number)
-        number = number + 1
-    if math.sqrt(i) == number :
-            sum = sum + number
-    return sum
+    while number < int(math.sqrt(num)):
+        if num % number == 0:
+            addition += number + (num/number)
+        number += 1
+    if math.sqrt(num) == number:
+            addition += number
+    return addition
 
-sum_div = [0]*10001
-amicable = []
-answer = 0
 
-for i in xrange(1,10001):
-    sum_div[i] = find_sum_factors(i)
+def main():
+    sum_div = [0]*10001
+    amicable = list()
+    answer = 0
 
-for x in xrange(1,10001):
-    if sum_div[x]<10001:
-        if sum_div[x] != 1 and  sum_div[x] != x and x == sum_div[sum_div[x]] :
-            amicable.append(x)
+    for i in xrange(1, 10001):
+        sum_div[i] = find_sum_factors(i)
 
-print sum(amicable)
+    for x in xrange(1, 10001):
+        if sum_div[x] < 10001:
+            if sum_div[x] != 1 and sum_div[x] != x and x == sum_div[sum_div[x]]:
+                amicable.append(x)
+
+    print sum(amicable)
+
+if __name__ == '__main__':
+    main()
