@@ -33,7 +33,6 @@ def find_sum_factors(num):
 def main():
     sum_div = [0]*10001
     amicable = list()
-    answer = 0
 
     for i in xrange(1, 10001):
         sum_div[i] = find_sum_factors(i)
