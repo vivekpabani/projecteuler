@@ -31,7 +31,7 @@ __author__ = 'vivek'
 import time
 
 
-def fib(a,b,n):
+def fib(a, b, n):
     a, b = b, a+b
     n += 1
     return a, b, n
@@ -45,7 +45,7 @@ def main():
     count = 1
 
     while len(str(num1)) != 1000:
-        num1, num2, count = fib(num1,num2,count)
+        num1, num2, count = fib(num1, num2, count)
 
     print(count)
 
