@@ -41,9 +41,9 @@ def is_prime(number):
         start = 5
         while start <= int(math.sqrt(number)):
 
-            if number % start == 0 :
+            if number % start == 0:
                 return 0
-            if number % (start+2) == 0 :
+            if number % (start+2) == 0:
                 return 0
             start += 6
         return 1
@@ -67,12 +67,12 @@ def main():
             n = 0
             found_prime = 0
 
-            while is_prime(equation(a,b,n)):
+            while is_prime(equation(a, b, n)):
                 found_prime += 1
                 n += 1
             if found_prime > max_prime:
                 max_prime = found_prime
-                ans_a, ans_b, ans_n  = a, b, n
+                ans_a, ans_b, ans_n = a, b, n
 
     print(ans_a, ans_b, ans_n)
     print(ans_a*ans_b)
