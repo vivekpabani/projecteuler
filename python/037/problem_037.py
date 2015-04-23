@@ -91,8 +91,8 @@ def main():
 
     start_time = time.clock()
 
-    prime_numbers = []
-    trunckable_primes = []
+    prime_numbers = list()
+    trunckable_primes = list()
 
     for x in xrange(1, 1000000):
         if is_prime_trunck(x):
