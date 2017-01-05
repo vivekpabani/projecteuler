@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 
-# IN PROGRESS #
 """
 Problem Definition :
 
@@ -20,35 +19,28 @@ __author__ = 'vivek'
 import time
 import math
 
-startTime = time.clock()
-
-
 def pentagonal(n):
     return n*(3*n - 1)/2
 
 
-penta_numbers = [pentagonal(x) for x in xrange(1,5000)]
+def main():
 
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
-answers = []
+    start_time = time.clock()
+    limit = 5000
+    penta_numbers = [pentagonal(x) for x in range(1, limit)]
+    found = 0
+    for i in range(0, limit-1):
+        for j in xrange(0, i):
+            number1 = penta_numbers[i]
+            number2 = penta_numbers[j]
+            if number1 - number2 in penta_numbers:# and number2-number1 in penta_numbers:
+                if number1 + number2 in penta_numbers:
+                    print(number1, number2, number1-number2)
+                    found = 1
+                    break
+        if found:
+            break
+    print("Run time...{} secs \n".format(round(time.clock() - start_time, 4)))
 
-print(penta_numbers[1998])
-print(penta_numbers[4998])
-
-for i in xrange(0,1999):
-    for j in xrange(i+1,1999):
-        number1 = penta_numbers[i]
-        number2 = penta_numbers[j]
-        if number2+number1 in penta_numbers:# and number2-number1 in penta_numbers:
-            answers.append(number1+ number2)
-            #print("Found")
-            print(number1, number2)
-if answers:
-    print(min(answers))
-    print(len(answers))
-else:
-    print("Not found")
-
-#print(penta_numbers)
-
-print "Run time...{} secs \n".format(round(time.clock() - startTime, 4))
+if __name__ == "__main__":
+    main()
