@@ -23,26 +23,29 @@ def find_sum_factors(num):
     
     while number < int(math.sqrt(num)):
         if num % number == 0:
-            addition += number + (num/number)
+            addition += number + int((num/number))
         number += 1
+
     if math.sqrt(num) == number:
             addition += number
-    return addition
+
+    return int(addition)
 
 
 def main():
-    sum_div = [0]*10001
-    amicable = list()
+    limit = 10001
+    sum_factors_dict = [0 for i in range(limit)]
+    amicable = list() 
 
-    for i in xrange(1, 10001):
-        sum_div[i] = find_sum_factors(i)
+    for i in range(1, limit):
+        sum_factors_dict[i] = find_sum_factors(i)
 
-    for x in xrange(1, 10001):
-        if sum_div[x] < 10001:
-            if sum_div[x] != 1 and sum_div[x] != x and x == sum_div[sum_div[x]]:
-                amicable.append(x)
-
-    print sum(amicable)
+    for x in range(2, limit):
+        if -1 < sum_factors_dict[x] < limit and sum_factors_dict[x] != x and x == sum_factors_dict[sum_factors_dict[x]]:
+            amicable.append(x)
+            amicable.append(sum_factors_dict[x])
+            sum_factors_dict[sum_factors_dict[x]] = -1  
+    print(sum(amicable))
 
 if __name__ == '__main__':
     main()
